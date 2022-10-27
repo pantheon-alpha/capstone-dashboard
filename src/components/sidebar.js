@@ -4,7 +4,7 @@ import Finseed from '../images/Finseed.svg'
 import sampleIcn from '../images/gatsby-icon.png'
 
 const Container = styled.div`
-    background-color: ${p=> p.theme.primaryOffWhite};
+    background-color: ${p=> p.theme.secondaryBg};
     flex: 1;
     height: 100vh;
     overflow-y: none;
@@ -28,7 +28,7 @@ const Title = styled.h3`
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
-    color: ${p=> p.theme.textGrey};
+    color: ${p=> p.theme.textPrimary};
 `
 
 const Menu = styled.div`
@@ -59,7 +59,7 @@ const MenuItemActive = styled.div`
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: ${p=> p.theme.textWhite};
+        color: ${p=> p.theme.secondaryHeading};
     }
 `
 const MenuItem = styled.div`
@@ -73,7 +73,7 @@ const MenuItem = styled.div`
     cursor: pointer;
 
     &:hover{
-        border: .5px solid black;
+        //border: .5px solid black;
     }
 
     img {
@@ -87,7 +87,7 @@ const MenuItem = styled.div`
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: ${p=> p.theme.textGrey};
+        color: ${p=> p.theme.textPrimary};
     }
 `
 
