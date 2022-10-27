@@ -14,7 +14,7 @@ const Layout = () => {
   `
 
   return (
-    <ThemeProvider theme={ThemeLight}>
+    <ThemeProvider theme={ThemeDark}>
       <GlobalStyles/>
       <Layout>
         <Sidebar/>

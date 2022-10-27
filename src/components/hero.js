@@ -10,7 +10,7 @@ import BasicTable from '../Elements/TrendingTable';
 
 
 const Container = styled.section`
-  background-color: ${p=> p.theme.primaryWhite};
+  background-color: ${p=> p.theme.primaryBg};
   flex: 3;
   padding: 2rem;
 `
@@ -28,6 +28,7 @@ const Title = styled.h3`
   font-weight: 600;
   font-size: 26px;
   line-height: 39px;
+  color: ${p=>p.theme.textPrimary};
 `
 const SearchBar = styled.div`
 
@@ -42,15 +43,20 @@ const SearchBar = styled.div`
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
+    background-color: transparent;
 
-    color: rgba(64, 64, 64, 0.5);
+    color: ${p=> p.theme.textPrimary};
+    opacity: .5;
   }
+`
+const SearchIcn = styled(CiSearch)`
+  color: ${p=> p.theme.textPrimary};
+  opacity: .5;
 `
 
 const WidgetRow = styled.div`
 
   margin-top: 1rem;
-  //border: red 2px solid;
 `
 
 const SectionHeader = styled.div`
@@ -58,7 +64,6 @@ const SectionHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
-  //border: red 2px solid;
 `
 
 const SectionTitle = styled.h3`
@@ -67,6 +72,7 @@ const SectionTitle = styled.h3`
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  color: ${p=>p.theme.textPrimary};
 `
 const SectionLink = styled.h3`
 
@@ -93,14 +99,13 @@ const Widget = styled.div`
   border-radius: 10px;
   cursor: pointer;
   background: url(${Farm});
-  //background: linear-gradient(180deg, #242424 0%, rgba(217, 217, 217, 0) 70.62%);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   #row{
-    background-color: ${p=>p.theme.primaryOffWhite};
+    background-color: ${p=>p.theme.secondaryBg};
     border-radius: 0px 0px 10px 10px;
     height: 45px;
     opacity: .8;
@@ -128,7 +133,7 @@ const Widget = styled.div`
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #000000;
+    color: ${p=> p.theme.textHeading};
     margin: 0rem 1rem;
   }
 
@@ -139,7 +144,13 @@ const Widget = styled.div`
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
-    color: #66D998;
+    color: ${p=> p.theme.FNGreen};
+  }
+
+  &:nth-child(even) {
+    p{
+      color: ${p=> p.theme.FNRed};
+    }
   }
 `
 const WidgetName = styled.h3`
@@ -153,8 +164,9 @@ const WidgetName = styled.h3`
   /* identical to box height */
 
 
-  color: #000000;
+  color: ${p=> p.theme.textHeading};
 `
+
 
 const Hero = () => {
   return (
@@ -164,7 +176,7 @@ const Hero = () => {
             Dashboard
           </Title>
           <SearchBar>
-            <CiSearch/>
+            <SearchIcn/>
             <input placeholder='Search'></input>
           </SearchBar>
         </Header>

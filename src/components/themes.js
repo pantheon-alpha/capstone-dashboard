@@ -1,21 +1,23 @@
 const ThemeLight = {
 
-    primaryOffWhite: '#F2F2F2',
-    primaryWhite: '#FFFFFF',
+
+    primaryBg: 'F2F2F2',
+    secondaryBg: '#F2F2F2',
     FNRed: '#D96666',
     FNGreen: '#66D998',
-    textGrey: '#404040',
-    textBlack: '#000000',
-    textWhite: '#F2F2F2'
+    textPrimary: '#404040',
+    textHeading: '#000000',
+    secondaryHeading: '#F2F2F2'
 }
 
 const ThemeDark = {
-    primaryGrey: '#404040',
-    primaryBlack: '#222222',
+    primaryBg: '#222222',
+    secondaryBg: '#404040',
     FNRed: '#D96666',
-    textGrey: '#404040',
-    textBlack: '#000000',
-    textWhite: '#F2F2F2'
+    FNGreen: '#66D998',
+    textPrimary: '#F2F2F2',
+    textHeading: '#FFFFFF',
+    secondaryHeading: '#404040'
 }
 
 export {ThemeLight, ThemeDark}
