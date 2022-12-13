@@ -5,10 +5,12 @@ import sampleIcn from '../images/gatsby-icon.png'
 
 const Container = styled.div`
     background-color: ${p=> p.theme.primaryBg};
-    flex: 1;
     height: 100vh;
-    position: sticky;
+    width: 20vw;
+    flex: 1;
     border-left: 1px solid grey;
+    position: fixed;
+    margin-left: 80vw;
 `
 const Header = styled.div`
     padding: 2rem;

@@ -7,12 +7,15 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import Farm from "../images/unsplash_xDrxJCdedcI.png"
 import { Table } from '@mui/material';
 import BasicTable from '../Elements/TrendingTable';
+import { Link } from 'gatsby';
 
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
   flex: 3;
   padding: 2rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
 `
 const Header = styled.div`
   padding: 1rem 0rem;
@@ -74,7 +77,9 @@ const SectionTitle = styled.h3`
   line-height: 30px;
   color: ${p=>p.theme.textPrimary};
 `
-const SectionLink = styled.h3`
+const SectionLink = styled(Link)`
+
+  text-decoration: none;
 
   font-style: normal;
   font-weight: 300;
@@ -108,7 +113,7 @@ const Widget = styled.div`
     background-color: ${p=>p.theme.secondaryBg};
     border-radius: 0px 0px 10px 10px;
     height: 45px;
-    opacity: .8;
+    opacity: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +189,96 @@ const Hero = () => {
         <WidgetRow>
           <SectionHeader>
             <SectionTitle>Farms</SectionTitle>
-            <SectionLink>see more</SectionLink>
+            <SectionLink to='/farms'>see more</SectionLink>
+          </SectionHeader>
+          <WidgetTray>
+              <Widget>
+                <WidgetName>
+                  Pavan Farms
+                </WidgetName>
+                <div id='row'>
+                  <div>
+                    <h2>
+                      ₹2,300.06
+                    </h2>
+                    <p>
+                      580.20 (2.87%)
+                    </p>
+                  </div>
+                  <img id='add-icon' src={Plus}/>
+                </div>
+              </Widget>
+              <Widget>
+                <WidgetName>
+                  Pavan Farms
+                </WidgetName>
+                <div id='row'>
+                  <div>
+                    <h2>
+                      ₹2,300.06
+                    </h2>
+                    <p>
+                      580.20 (2.87%)
+                    </p>
+                  </div>
+                  <AiOutlinePlusCircle id='add-icon'/>
+                </div>
+              </Widget>
+              <Widget>
+                <WidgetName>
+                  Pavan Farms
+                </WidgetName>
+                <div id='row'>
+                  <div>
+                    <h2>
+                      ₹2,300.06
+                    </h2>
+                    <p>
+                      580.20 (2.87%)
+                    </p>
+                  </div>
+                  <img id='add-icon' src={Plus}/>
+                </div>
+              </Widget>
+              <Widget>
+                <WidgetName>
+                  Pavan Farms
+                </WidgetName>
+                <div id='row'>
+                  <div>
+                    <h2>
+                      ₹2,300.06
+                    </h2>
+                    <p>
+                      580.20 (2.87%)
+                    </p>
+                  </div>
+                  <AiOutlinePlusCircle id='add-icon'/>
+                </div>
+              </Widget>
+              <Widget>
+                <WidgetName>
+                  Pavan Farms
+                </WidgetName>
+                <div id='row'>
+                  <div>
+                    <h2>
+                      ₹2,300.06
+                    </h2>
+                    <p>
+                      580.20 (2.87%)
+                    </p>
+                  </div>
+                  <img id='add-icon' src={Plus}/>
+                </div>
+              </Widget>
+          </WidgetTray>
+        </WidgetRow>
+
+        <WidgetRow>
+          <SectionHeader>
+            <SectionTitle>Farms</SectionTitle>
+            <SectionLink to='/farms'>see more</SectionLink>
           </SectionHeader>
           <WidgetTray>
               <Widget>
@@ -273,7 +367,15 @@ const Hero = () => {
         <WidgetRow>
           <SectionHeader>
             <SectionTitle>Trending</SectionTitle>
-            <SectionLink>see more</SectionLink>
+            <SectionLink to='/page-2'>see more</SectionLink>
+          </SectionHeader>
+          <BasicTable/>
+        </WidgetRow>
+
+        <WidgetRow>
+          <SectionHeader>
+            <SectionTitle>Trending</SectionTitle>
+            <SectionLink to='/page-2'>see more</SectionLink>
           </SectionHeader>
           <BasicTable/>
         </WidgetRow>

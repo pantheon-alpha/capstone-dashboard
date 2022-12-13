@@ -1,14 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import { CiSearch } from "react-icons/ci"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { CiSearch } from "react-icons/ci"
+import Sidebar from "../components/sidebar"
+import Hero from "../components/hero"
+import styled from "styled-components"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
   flex: 3;
   padding: 2rem;
+  
   margin-left: 20vw;
   margin-right: 20vw;
   height: 100vh;
@@ -52,20 +55,20 @@ const SearchIcn = styled(CiSearch)`
   color: ${p=> p.theme.textPrimary};
   opacity: .5;
 `
-const SecondPage = () => (
+const Home = () => (
   <Layout>
     <Container>
         <Header>
-            <Title>Page 2</Title>
+            <Title>Farms</Title>
             <SearchBar>
                 <SearchIcn/>
                 <input type="text" placeholder="Search"/>
             </SearchBar>
         </Header>
-      </Container>
+    </Container>
   </Layout>
 )
 
-export const Head = () => <Seo title="Page two" />
+export const Head = () => <Seo title="Farms" />
 
-export default SecondPage
+export default Home
