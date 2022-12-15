@@ -12,7 +12,7 @@ import {IoExitOutline} from 'react-icons/io5'
 const Container = styled.div`
     background-color: ${p=> p.theme.primaryBg};
     height: 100vh;
-    width: 20vw;
+    width: 19vw;
     flex: 1;
     border-left: 1px solid grey;
     position: fixed;

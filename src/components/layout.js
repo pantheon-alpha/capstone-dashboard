@@ -3,10 +3,8 @@ import styled, { ThemeProvider } from "styled-components"
 import GlobalStyles from "./global-styles"
 import { ThemeDark, ThemeLight } from "./themes"
 import Sidebar from "./sidebar"
-import Hero from "./hero"
 import SidebarRight from "./sidebarRight"
 import { useLocation } from "@reach/router"
-import { Location } from "@reach/router"
 
 const Layout = ({ children }) => {
   
@@ -50,7 +48,7 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <ThemeProvider theme={ThemeLight}>
+    <ThemeProvider theme={ThemeDark}>
       <GlobalStyles/>
       <Layout>
         <Sidebar activeIndex={activeIndex}/>

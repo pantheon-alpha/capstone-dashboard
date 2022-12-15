@@ -1,22 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { CiSearch } from "react-icons/ci"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Sidebar from "../components/sidebar"
-import Hero from "../components/hero"
 import styled from "styled-components"
-import Trending from "../widgets/Farm/Trending"
 import FarmList from "../widgets/Farm/FarmList"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
   flex: 3;
   padding: 2rem;
-  
   margin-left: 20vw;
-  margin-right: 20vw;
-  height: 100vh;
+  margin-right: 18vw;
+
+  //border: 2px solid red;
 `
 const Header = styled.div`
   padding: 1rem 0rem;
