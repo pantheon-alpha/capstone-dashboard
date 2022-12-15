@@ -14,6 +14,37 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `@martinreiche/gatsby-firestore`,
+      options: {
+        credential: require("./serviceAccountKey.json"),
+        types: [
+          {
+            type: "User",
+            collection: "users",
+            map: doc => ({
+              name: doc.name,
+              email: doc.email,
+              role: doc.role,
+              id: doc.id,
+            }),
+          },
+          {
+            type: "Farm",
+            collection: "farms",
+            map: doc => ({
+              id: doc.id,
+              name: doc.name,
+              size: doc.size,
+              city: doc.city,
+              price: doc.price,
+            }),
+          },
+        ],
+      },
+    },
+
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

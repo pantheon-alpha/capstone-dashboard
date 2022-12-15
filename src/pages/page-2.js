@@ -56,7 +56,7 @@ const SecondPage = () => (
   <Layout>
     <Container>
         <Header>
-            <Title>Page 2</Title>
+            <Title>WORK IN PROGRESS</Title>
             <SearchBar>
                 <SearchIcn/>
                 <input type="text" placeholder="Search"/>
