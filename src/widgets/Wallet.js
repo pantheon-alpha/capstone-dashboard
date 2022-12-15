@@ -48,6 +48,7 @@ const Table = styled.table`
         #profit{
             color: ${p=> p.theme.FNGreen};
         }
+        
 
     }
 

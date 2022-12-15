@@ -6,6 +6,8 @@ import Seo from "../components/seo"
 import Sidebar from "../components/sidebar"
 import Hero from "../components/hero"
 import styled from "styled-components"
+import Trending from "../widgets/Farm/Trending"
+import FarmList from "../widgets/Farm/FarmList"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
@@ -22,7 +24,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
 `
 const Title = styled.h3`
 
@@ -65,6 +67,7 @@ const Home = () => (
                 <input type="text" placeholder="Search"/>
             </SearchBar>
         </Header>
+        <FarmList/>
     </Container>
   </Layout>
 )

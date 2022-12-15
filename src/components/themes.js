@@ -1,7 +1,7 @@
 const ThemeLight = {
 
 
-    primaryBg: 'F2F2F2',
+    primaryBg: '#FFFFFF',
     secondaryBg: '#F2F2F2',
     FNRed: '#D96666',
     FNGreen: '#66D998',

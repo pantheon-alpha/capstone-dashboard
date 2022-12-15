@@ -5,9 +5,8 @@ import { CiSearch } from "react-icons/ci";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 
 import Farm from "../images/unsplash_xDrxJCdedcI.png"
-import { Table } from '@mui/material';
-import BasicTable from '../Elements/TrendingTable';
 import { Link } from 'gatsby';
+import Trending from '../widgets/Farm/Trending';
 
 
 const Container = styled.section`
@@ -66,7 +65,7 @@ const SectionHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0;
 `
 
 const SectionTitle = styled.h3`
@@ -277,6 +276,14 @@ const Hero = () => {
 
         <WidgetRow>
           <SectionHeader>
+            <SectionTitle>Trending</SectionTitle>
+            <SectionLink to='/page-2'>see more</SectionLink>
+          </SectionHeader>
+          <Trending/>
+        </WidgetRow>
+
+        <WidgetRow>
+          <SectionHeader>
             <SectionTitle>Farms</SectionTitle>
             <SectionLink to='/farms'>see more</SectionLink>
           </SectionHeader>
@@ -369,16 +376,11 @@ const Hero = () => {
             <SectionTitle>Trending</SectionTitle>
             <SectionLink to='/page-2'>see more</SectionLink>
           </SectionHeader>
-          <BasicTable/>
+          <Trending/>
         </WidgetRow>
 
-        <WidgetRow>
-          <SectionHeader>
-            <SectionTitle>Trending</SectionTitle>
-            <SectionLink to='/page-2'>see more</SectionLink>
-          </SectionHeader>
-          <BasicTable/>
-        </WidgetRow>
+        
+        
     </Container>
   )
 }
