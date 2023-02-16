@@ -53,7 +53,7 @@ const SearchIcn = styled(CiSearch)`
   color: ${p=> p.theme.textPrimary};
   opacity: .5;
 `
-const Home = () => (
+const Farms = () => (
   <Layout>
     <Container>
         <Header>
@@ -70,4 +70,4 @@ const Home = () => (
 
 export const Head = () => <Seo title="Farms" />
 
-export default Home
+export default Farms
