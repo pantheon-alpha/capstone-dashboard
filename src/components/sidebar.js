@@ -127,9 +127,9 @@ const Sidebar = ({activeIndex}) => {
         },
         {
             id: 2,
-            title: 'Transactions',
+            title: 'Investments',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/investments'
         },
         {
             id: 3,
