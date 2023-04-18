@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {IoNotificationsCircleSharp} from 'react-icons/io5'
 import {RiMoonFill} from 'react-icons/ri'
-import farmavatar from '../images/FarmProfilePicture.svg'
-import { SubFarmers } from '../widgets/SubFarmers'
+// import {farmavatar} from '../images/FarmProfilePicture.svg'
+ import { SubFarmers } from '../widgets/Farm/SubFarmers'
 
 import {IoExitOutline} from 'react-icons/io5'
 
@@ -132,9 +132,6 @@ const SignOutText = styled.h3`
 `
 
 
-
-
-
 const SidebarFarm = () => {
     
   return (
@@ -144,7 +141,7 @@ const SidebarFarm = () => {
             <ThemeIcn />
         </Header>
         <Profile>
-            <ProfileImg src={farmavatar}/>
+            <ProfileImg/>
             <ProfileName>Barkha Jaya</ProfileName>
             <ProfileEmail>barkha.jaya@gmail.com</ProfileEmail>
         </Profile>
