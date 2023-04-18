@@ -4,6 +4,7 @@ import Finseed from '../images/Finseed.svg'
 import sampleIcn from '../images/gatsby-icon.png'
 import { useState } from 'react'
 import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 
 const Container = styled.div`
@@ -135,37 +136,37 @@ const Sidebar = ({activeIndex}) => {
             id: 3,
             title: 'Wallet',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/wallet'
         },
         {
             id: 4,
             title: 'Analysis',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/analysis'
         },
         {
             id: 5,
             title: 'History',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/history'
         },
         {
             id: 6,
             title: 'Products',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/products'
         },
         {
             id: 7,
             title: 'Merchant',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/merchant'
         },
         {
             id: 8,
             title: 'Settings',
             icon: sampleIcn,
-            link: '/page-2'
+            link: '/settings'
         },
     ]
 

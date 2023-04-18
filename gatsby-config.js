@@ -15,18 +15,27 @@ module.exports = {
       },
     },
     {
-      resolve: `@martinreiche/gatsby-firestore`,
+      resolve: 'gatsby-firesource',
       options: {
         credential: require("./serviceAccountKey.json"),
         types: [
           {
-            type: "User",
-            collection: "users",
+            type: 'User',
+            collection: 'users',
             map: doc => ({
               name: doc.name,
               email: doc.email,
               role: doc.role,
+              id: doc.id
+            })
+          },
+          {
+            type: "Test",
+            collection: "test",
+            map: doc => ({
+              name: doc.name,
               id: doc.id,
+              number: doc.number,
             }),
           },
           {
@@ -40,9 +49,73 @@ module.exports = {
               price: doc.price,
             }),
           },
-        ],
-      },
+          {
+            type: "Investment",
+            collection: "investments",
+            map: doc => ({
+              id: doc.id,
+              name: doc.name,
+              type: doc.type,
+              amount: doc.amount,
+              state: doc.state,
+            }),
+          },
+        ]
+      }
+
     },
+
+    // {
+    //   resolve: `@martinreiche/gatsby-firestore`,
+    //   options: {
+    //     credential: require("./serviceAccountKey.json"),
+    //     types: [
+    //       {
+    //         type: "User",
+    //         collection: "users",
+    //         map: doc => ({
+    //           name: doc.name,
+    //           email: doc.email,
+    //           role: doc.role,
+    //           id: doc.id,
+    //         }),
+    //       },
+    //       {
+    //         type: "Test",
+    //         collection: "test",
+    //         map: doc => ({
+    //           name: doc.name,
+    //           id: doc.id,
+    //           number: doc.number,
+    //         }),
+    //       },
+    //       {
+    //         type: "Farm",
+    //         collection: "farms",
+    //         map: doc => ({
+    //           id: doc.id,
+    //           name: doc.name,
+    //           size: doc.size,
+    //           city: doc.city,
+    //           price: doc.price,
+    //         }),
+    //       },
+    //       {
+    //         type: "Investment",
+    //         collection: "investments",
+    //         map: doc => ({
+    //           id: doc.id,
+    //           name: doc.name,
+    //           type: doc.type,
+    //           amount: doc.amount,
+    //           state: doc.state,
+    //         }),
+    //       },
+    //     ],
+    //   },
+    // },
+
+
 
     
     `gatsby-transformer-sharp`,

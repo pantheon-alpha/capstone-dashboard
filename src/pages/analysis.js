@@ -1,21 +1,16 @@
 import * as React from "react"
-import { CiSearch } from "react-icons/ci"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import styled from "styled-components"
-import Trending from '../widgets/Investments/Trending';
-import SidebarRight from "../components/sidebarRight"
-import Transactions from '../widgets/Investments/Transactions';
-
+import { CiSearch } from "react-icons/ci"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
   flex: 3;
   padding: 2rem;
   margin-left: 20vw;
-  margin-right: 18vw;
-
-  //border: 2px solid red;
+  margin-right: 20vw;
+  height: 100vh;
 `
 const Header = styled.div`
   padding: 1rem 0rem;
@@ -23,7 +18,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //margin-bottom: 3rem;
+  margin-bottom: 3rem;
 `
 const Title = styled.h3`
 
@@ -56,22 +51,20 @@ const SearchIcn = styled(CiSearch)`
   color: ${p=> p.theme.textPrimary};
   opacity: .5;
 `
-const Farms = () => (
+const Analysis = () => (
   <Layout>
     <Container>
         <Header>
-            <Title>Investments</Title>
+            <Title>WORK IN PROGRESS</Title>
             <SearchBar>
                 <SearchIcn/>
                 <input type="text" placeholder="Search"/>
             </SearchBar>
         </Header>
-        <Transactions/>
-    </Container>
-    <SidebarRight/>
+      </Container>
   </Layout>
 )
 
-export const Head = () => <Seo title="Investments" />
+export const Head = () => <Seo title="Analysis" />
 
-export default Farms
+export default Analysis
