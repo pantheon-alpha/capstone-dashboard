@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { CiSearch } from "react-icons/ci"
+import Sidebar from "../widgets/Farm/Sidebar"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
@@ -62,6 +63,7 @@ const SecondPage = () => (
             </SearchBar>
         </Header>
       </Container>
+      <Sidebar />
   </Layout>
 )
 

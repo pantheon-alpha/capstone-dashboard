@@ -2,22 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import {IoNotificationsCircleSharp} from 'react-icons/io5'
 import {RiMoonFill} from 'react-icons/ri'
-import {BsFillTriangleFill} from 'react-icons/bs'
-import avatar from '../images/profileAvatar.svg'
-import { Wallet } from '../widgets/Wallet'
+import SubFarmers from './SubFarmers'
+
+import avatar from '../../images/FarmProfilePicture.svg'
+
 import {IoExitOutline} from 'react-icons/io5'
 
 
 
-const Container = styled.div`
+
+const Container = styled.section`
     background-color: ${p=> p.theme.primaryBg};
-    height: 100vh;
     width: 19vw;
-    flex: 1;
     border-left: 1px solid grey;
     position: fixed;
     margin-left: 80vw;
-    padding: 2rem;
+    padding: 1rem;
+    height: 100vh;
+
+    /* z-index: 99; */
 
     //border: solid 2px red;
 `
@@ -66,6 +69,7 @@ const ProfileImg = styled.img`
     height: 6rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+    //background-color: aqua;
 `
 const ProfileName = styled.h3`
     font-style: normal;
@@ -81,21 +85,21 @@ const ProfileEmail = styled.h3`
     line-height: 15px;
     color: ${p=> p.theme.textPrimary};
 `
-const Balance = styled.div`
+const LandDetails = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 1rem 0rem;
 `
-const BalanceTitle = styled.h3`
+const LandTitle = styled.h3`
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     color: ${p=> p.theme.textPrimary};
 `
-const BalanceAmount = styled.h2`
+const Land = styled.h2`
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -105,13 +109,6 @@ const BalanceAmount = styled.h2`
     display: flex;
     align-items: center;
     justify-content: center;
-`
-const BalanceIcn = styled(BsFillTriangleFill)`
-    width: .5rem;
-    height: .5rem;
-    color: ${p=> p.theme.FNGreen};
-
-    margin-left: .5rem;
 `
 
 const SignOut = styled.div`
@@ -138,10 +135,7 @@ const SignOutText = styled.h3`
 `
 
 
-
-
-
-const SidebarRight = () => {
+const Sidebar = () => {
     
   return (
     <Container>
@@ -151,27 +145,22 @@ const SidebarRight = () => {
         </Header>
         <Profile>
             <ProfileImg src={avatar}/>
-            <ProfileName>John Doe</ProfileName>
-            <ProfileEmail>johndoe@gmail.com</ProfileEmail>
+            <ProfileName>Barkha Jaya</ProfileName>
+            <ProfileEmail>barkha.jaya@gmail.com</ProfileEmail>
         </Profile>
-        <Balance>
-            <BalanceAmount>₹ 69,654
-                <BalanceIcn/>
-            </BalanceAmount>
-            <BalanceTitle>Gross deviation</BalanceTitle>
-        </Balance>
+        <LandDetails>
+            <Land>21.5 acre</Land>
+            <LandTitle>Total Land</LandTitle>
+        </LandDetails>
 
-        <Wallet/>
+        <SubFarmers/>
 
         <SignOut>
             <SignOutiIcn/>
             <SignOutText>Sign Out</SignOutText>
         </SignOut>
-
-
-    
     </Container>
   )
 }
 
-export default SidebarRight
+export default Sidebar

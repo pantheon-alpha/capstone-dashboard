@@ -3,7 +3,10 @@ import { CiSearch } from "react-icons/ci"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import styled from "styled-components"
+import Trending from '../widgets/Investments/Trending';
+import SidebarRight from "../components/sidebarRight"
 import Transactions from '../widgets/Investments/Transactions';
+
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
@@ -65,9 +68,10 @@ const Farms = () => (
         </Header>
         <Transactions/>
     </Container>
+    <SidebarRight/>
   </Layout>
 )
 
-export const Head = () => <Seo title="Farms" />
+export const Head = () => <Seo title="Investments" />
 
 export default Farms
