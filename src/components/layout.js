@@ -5,6 +5,7 @@ import { ThemeDark, ThemeLight } from "./themes"
 import Sidebar from "./sidebar"
 import SidebarRight from "./sidebarRight"
 import { useLocation } from "@reach/router"
+import SidebarFarm from "./sidebarFarm"
 
 const Layout = ({ children }) => {
   
@@ -53,7 +54,8 @@ const Layout = ({ children }) => {
       <Layout>
         <Sidebar activeIndex={activeIndex}/>
           {children}
-        <SidebarRight/>
+        {/* <SidebarRight/> */}
+        <SidebarFarm/>
       </Layout>
     </ThemeProvider>
   )

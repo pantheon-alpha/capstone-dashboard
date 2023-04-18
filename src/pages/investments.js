@@ -68,6 +68,6 @@ const Farms = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Farms" />
+export const Head = () => <Seo title="Investments" />
 
 export default Farms
