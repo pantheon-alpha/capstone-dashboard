@@ -158,9 +158,9 @@ const Sidebar = ({activeIndex}) => {
         },
         {
             id: 7,
-            title: 'Merchant',
+            title: 'Test',
             icon: sampleIcn,
-            link: '/merchant'
+            link: '/test'
         },
         {
             id: 8,
