@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Trend from './../../images/example.png'
+import { graphql } from 'gatsby'
+import { useStaticQuery } from 'gatsby'
 
 
 const Container = styled.div`
@@ -146,51 +148,53 @@ const Table = styled.table`
     }
 `
 
-function createData(id, farmName, trend, price, profit, loss, category,secprice) {
-    return { id,farmName, trend, price, profit, loss, category,secprice };
-  }
-
-const rows = [
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-  createData(1,'Sridevi Farms', {Trend}, 1573.46, 200, 400, 'Regular',10000),
-];
-
-
-const Trending = () => {
-  return (
-    <Container>
-        <Table>
-            {/* <tr id=''>
-                <th className='number'></th>
-                <th className='name' align='left'id='farmName'></th>
-                <th className='number'></th>
-                <th className='number' align='center'></th>
-                <th className='number' align='center'></th>
-                <th className='number' align='center'></th>
-            </tr> */}
-            {rows.map((row) => (
-                <tr key={row.id}>
-                    <td id='mainrow'>
-                        <td align='left' className='farmname'>{row.farmName}</td>
-                        <td align='left' className='farmtype'>{row.category}</td>
-                    </td>
-                    <td id='pricerow'>
-                        <td align='center' className='mainprice'>{row.price}</td>
-                        <td align='center' className='subprice'>({row.secprice})</td>
-                    </td>
-                </tr>
-            ))}
-            
-        </Table>
-    </Container>
-  )
+function createData(id, farmName, type, price, state) {
+    return { id, farmName, type, price, state };
 }
 
-export default Trending
+const Transactions = () => {
+
+    const data = useStaticQuery(query)
+    const rows = data.allInvestment.edges.map(edge => {
+        return createData(edge.node.id, edge.node.name, edge.node.type, edge.node.amount, edge.node.state)
+    })
+
+    
+
+    return (
+        <Container>
+            <Table>
+                {rows.map(row => (
+                    <tr key={row.id}>
+                        <td id='mainrow'>
+                            <td align='left' className='farmname'>{row.farmName}</td>
+                            <td align='left' className='farmtype'>{row.type}</td>
+                        </td>
+                        <td id='pricerow'>
+                            <td align='center' className='mainprice'>{row.price}</td>
+                            <td align='center' className='subprice'>({row.state})</td>
+                        </td>
+                    </tr>
+                ))}
+            </Table>
+        </Container>
+    )
+}
+
+export default Transactions
+
+export const query = graphql`
+    query {
+        allInvestment {
+            edges {
+              node {
+                id
+                amount
+                name
+                state
+                type
+              }
+            }
+          }
+    }
+`
