@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
   else if (location.pathname === "/products") {
     activeIndex = 6
   }
-  else if (location.pathname === "/merchant") {
+  else if (location.pathname === "/test") {
     activeIndex = 7
   }
   else if (location.pathname === "/settings") {
@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <ThemeProvider theme={ThemeDark}>
+    <ThemeProvider theme={ThemeLight}>
       <GlobalStyles/>
       <Layout>
         <Sidebar activeIndex={activeIndex}/>
