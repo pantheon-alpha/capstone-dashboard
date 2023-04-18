@@ -6,7 +6,8 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 
 import Farm from "../images/unsplash_xDrxJCdedcI.png"
 import { Link } from 'gatsby';
-import Trending from '../widgets/Farm/Trending';
+import Trending from '../widgets/Farm/Trending'
+import SidebarRight from './sidebarRight';
 
 
 const Container = styled.section`
@@ -174,214 +175,215 @@ const WidgetName = styled.h3`
 
 const Hero = () => {
   return (
-    <Container>
-        <Header>
-          <Title>
-            Dashboard
-          </Title>
-          <SearchBar>
-            <SearchIcn/>
-            <input placeholder='Search'></input>
-          </SearchBar>
-        </Header>
+      <>
+        <Container>
+          <Header>
+            <Title>
+              Dashboard
+            </Title>
+            <SearchBar>
+              <SearchIcn/>
+              <input placeholder='Search'></input>
+            </SearchBar>
+          </Header>
 
-        <WidgetRow>
-          <SectionHeader>
-            <SectionTitle>Farms</SectionTitle>
-            <SectionLink to='/farms'>see more</SectionLink>
-          </SectionHeader>
-          <WidgetTray>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+          <WidgetRow>
+            <SectionHeader>
+              <SectionTitle>Farms</SectionTitle>
+              <SectionLink to='/farms'>see more</SectionLink>
+            </SectionHeader>
+            <WidgetTray>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <AiOutlinePlusCircle id='add-icon'/>
                   </div>
-                  <AiOutlinePlusCircle id='add-icon'/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <AiOutlinePlusCircle id='add-icon'/>
                   </div>
-                  <AiOutlinePlusCircle id='add-icon'/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-          </WidgetTray>
-        </WidgetRow>
+                </Widget>
+            </WidgetTray>
+          </WidgetRow>
 
-        <WidgetRow>
-          <SectionHeader>
-            <SectionTitle>Trending</SectionTitle>
-            <SectionLink to='/page-2'>see more</SectionLink>
-          </SectionHeader>
-          <Trending/>
-        </WidgetRow>
+          <WidgetRow>
+            <SectionHeader>
+              <SectionTitle>Trending</SectionTitle>
+              <SectionLink to='/page-2'>see more</SectionLink>
+            </SectionHeader>
+            <Trending/>
+          </WidgetRow>
 
-        <WidgetRow>
-          <SectionHeader>
-            <SectionTitle>Farms</SectionTitle>
-            <SectionLink to='/farms'>see more</SectionLink>
-          </SectionHeader>
-          <WidgetTray>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+          <WidgetRow>
+            <SectionHeader>
+              <SectionTitle>Farms</SectionTitle>
+              <SectionLink to='/farms'>see more</SectionLink>
+            </SectionHeader>
+            <WidgetTray>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <AiOutlinePlusCircle id='add-icon'/>
                   </div>
-                  <AiOutlinePlusCircle id='add-icon'/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <AiOutlinePlusCircle id='add-icon'/>
                   </div>
-                  <AiOutlinePlusCircle id='add-icon'/>
-                </div>
-              </Widget>
-              <Widget>
-                <WidgetName>
-                  Pavan Farms
-                </WidgetName>
-                <div id='row'>
-                  <div>
-                    <h2>
-                      ₹2,300.06
-                    </h2>
-                    <p>
-                      580.20 (2.87%)
-                    </p>
+                </Widget>
+                <Widget>
+                  <WidgetName>
+                    Pavan Farms
+                  </WidgetName>
+                  <div id='row'>
+                    <div>
+                      <h2>
+                        ₹2,300.06
+                      </h2>
+                      <p>
+                        580.20 (2.87%)
+                      </p>
+                    </div>
+                    <img id='add-icon' src={Plus}/>
                   </div>
-                  <img id='add-icon' src={Plus}/>
-                </div>
-              </Widget>
-          </WidgetTray>
-        </WidgetRow>
+                </Widget>
+            </WidgetTray>
+          </WidgetRow>
 
-        <WidgetRow>
-          <SectionHeader>
-            <SectionTitle>Trending</SectionTitle>
-            <SectionLink to='/page-2'>see more</SectionLink>
-          </SectionHeader>
-          <Trending/>
-        </WidgetRow>
-
-        
-        
-    </Container>
+          <WidgetRow>
+            <SectionHeader>
+              <SectionTitle>Trending</SectionTitle>
+              <SectionLink to='/page-2'>see more</SectionLink>
+            </SectionHeader>
+            <Trending/>
+          </WidgetRow>
+      </Container>
+      <SidebarRight />
+    </>
+    
   )
 }
 
