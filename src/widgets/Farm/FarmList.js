@@ -111,21 +111,22 @@ const Table = styled.table`
     }
 `
 
-const createData = (id, name, city, price, size) => {
-    return { id, name, city, price, size };
-    }
-
 
 
 const FarmList = () => {
-    
-    const data = useStaticQuery(query)
-    const farms = data.allFarm.nodes
-    console.log(farms)
 
-    const rows = farms.map(farm => {
-        return createData(farm.id, farm.name, farm.city, farm.price, farm.size)
-    })
+    const data = useStaticQuery(query)
+    const rows = data.allFarm.edges.map((edge, index) => ({
+        id: edge.node.id,
+        index: index + 1,
+        name: edge.node.name,
+        city: edge.node.city,
+        price: edge.node.price,
+        size: edge.node.size,
+        trend: edge.node.trend,
+    }))
+    
+   
 
 
   return (
@@ -143,7 +144,7 @@ const FarmList = () => {
             <tbody>
                 {rows.map(row => (
                     <tr key={row.id}>
-                        <td className='number'>{row.id}</td>
+                        <td className='number'>{row.index}</td>
                         <td className="name">{row.name}</td>
                         <td className="name">{row.city}</td>
                         <td className="number">{row.price}</td>
@@ -161,13 +162,15 @@ export default FarmList
 
 export const query = graphql`
     query {
-        allFarm (sort: {order: ASC, fields: id}){
-            nodes {
-              id
-              name
-              city
-              size
-              price
+        allFarm {
+            edges {
+              node {
+                id
+                name
+                price
+                size
+                city
+              }
             }
           }
     }

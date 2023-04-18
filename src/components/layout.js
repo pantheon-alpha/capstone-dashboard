@@ -25,23 +25,26 @@ const Layout = ({ children }) => {
   else if (location.pathname === "/farms") {
     activeIndex = 1
   }
-  else if (location.pathname === "/page-2") {
+  else if (location.pathname === "/investments") {
     activeIndex = 2
   }
-  else if (location.pathname === "/nft") {
+  else if (location.pathname === "/wallet") {
     activeIndex = 3
   }
-  else if (location.pathname === "/governance") {
+  else if (location.pathname === "/analysis") {
     activeIndex = 4
   }
-  else if (location.pathname === "/roadmap") {
+  else if (location.pathname === "/history") {
     activeIndex = 5
   }
-  else if (location.pathname === "/faq") {
+  else if (location.pathname === "/products") {
     activeIndex = 6
   }
-  else if (location.pathname === "/contact") {
+  else if (location.pathname === "/merchant") {
     activeIndex = 7
+  }
+  else if (location.pathname === "/settings") {
+    activeIndex = 8
   }
   else {
     activeIndex = 0
