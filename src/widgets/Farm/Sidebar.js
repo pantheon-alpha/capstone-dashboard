@@ -4,7 +4,7 @@ import {IoNotificationsCircleSharp} from 'react-icons/io5'
 import {RiMoonFill} from 'react-icons/ri'
 import SubFarmers from './SubFarmers'
 
-import avatar from '../../images/FarmProfilePicture.svg'
+import avatar from '../../images/FarmProfilePictureAdi.png'
 
 import {IoExitOutline} from 'react-icons/io5'
 
@@ -17,7 +17,7 @@ const Container = styled.section`
     border-left: 1px solid grey;
     position: fixed;
     margin-left: 80vw;
-    padding: 1rem;
+    padding-top: 2rem;
     height: 100vh;
 
     /* z-index: 99; */
@@ -38,6 +38,7 @@ const NotificationIcn = styled(IoNotificationsCircleSharp)`
     height: 1.5rem;
     cursor: pointer;
     color: ${p=> p.theme.textPrimary};
+    margin-left: 2rem;
 
 
     &:hover{
@@ -51,6 +52,7 @@ const ThemeIcn = styled(RiMoonFill)`
     height: 1.5rem;
     cursor: pointer;
     color: ${p=> p.theme.textPrimary};
+    margin-right: 2rem;
 
     &:hover{
         color: ${p=> p.theme.FNGreen};
@@ -62,13 +64,14 @@ const Profile = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 0rem;
+    padding: .5rem 0rem;
 `
 const ProfileImg = styled.img`
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+    border: 5px solid ${p=> p.theme.FNGreen};
     //background-color: aqua;
 `
 const ProfileName = styled.h3`
@@ -90,7 +93,7 @@ const LandDetails = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 1.65rem 0rem;
 `
 const LandTitle = styled.h3`
     font-style: normal;
@@ -116,8 +119,8 @@ const SignOut = styled.div`
     align-items: center;
     justify-content: right;
     flex-direction: row;
-    padding: 1rem 0rem;
-    margin-top: .5rem;
+    padding: 1.4rem 2rem 2rem 0rem;
+    margin-top: 0.5rem;
 `
 const SignOutiIcn = styled(IoExitOutline)`
     width: 1.5rem;
@@ -145,8 +148,8 @@ const Sidebar = () => {
         </Header>
         <Profile>
             <ProfileImg src={avatar}/>
-            <ProfileName>Barkha Jaya</ProfileName>
-            <ProfileEmail>barkha.jaya@gmail.com</ProfileEmail>
+            <ProfileName>Aditya Vikram</ProfileName>
+            <ProfileEmail>adi.vikky@gmail.com</ProfileEmail>
         </Profile>
         <LandDetails>
             <Land>21.5 acre</Land>

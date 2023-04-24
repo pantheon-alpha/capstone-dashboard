@@ -96,7 +96,9 @@ const WidgetTray = styled.div`
   justify-content: space-between;
 `
 
-const Widget = styled.div`
+const Widget = styled(Link)`
+
+  text-decoration: none;
   width: 150px;
   height: 150px;
   background-color: aqua;
@@ -188,12 +190,14 @@ const Hero = () => {
           </Header>
 
           <WidgetRow>
+
             <SectionHeader>
               <SectionTitle>Farms</SectionTitle>
               <SectionLink to='/farms'>see more</SectionLink>
             </SectionHeader>
+
             <WidgetTray>
-                <Widget>
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -209,7 +213,8 @@ const Hero = () => {
                     <img id='add-icon' src={Plus}/>
                   </div>
                 </Widget>
-                <Widget>
+
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -225,7 +230,8 @@ const Hero = () => {
                     <AiOutlinePlusCircle id='add-icon'/>
                   </div>
                 </Widget>
-                <Widget>
+
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -241,7 +247,8 @@ const Hero = () => {
                     <img id='add-icon' src={Plus}/>
                   </div>
                 </Widget>
-                <Widget>
+
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -257,7 +264,8 @@ const Hero = () => {
                     <AiOutlinePlusCircle id='add-icon'/>
                   </div>
                 </Widget>
-                <Widget>
+
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -273,14 +281,18 @@ const Hero = () => {
                     <img id='add-icon' src={Plus}/>
                   </div>
                 </Widget>
+
             </WidgetTray>
+
           </WidgetRow>
 
           <WidgetRow>
+
             <SectionHeader>
               <SectionTitle>Trending</SectionTitle>
               <SectionLink to='/page-2'>see more</SectionLink>
             </SectionHeader>
+
             <Trending/>
           </WidgetRow>
 
@@ -290,7 +302,8 @@ const Hero = () => {
               <SectionLink to='/farms'>see more</SectionLink>
             </SectionHeader>
             <WidgetTray>
-                <Widget>
+
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -306,7 +319,7 @@ const Hero = () => {
                     <img id='add-icon' src={Plus}/>
                   </div>
                 </Widget>
-                <Widget>
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -322,7 +335,7 @@ const Hero = () => {
                     <AiOutlinePlusCircle id='add-icon'/>
                   </div>
                 </Widget>
-                <Widget>
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -338,7 +351,7 @@ const Hero = () => {
                     <img id='add-icon' src={Plus}/>
                   </div>
                 </Widget>
-                <Widget>
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -354,7 +367,7 @@ const Hero = () => {
                     <AiOutlinePlusCircle id='add-icon'/>
                   </div>
                 </Widget>
-                <Widget>
+                <Widget to='/test'>
                   <WidgetName>
                     Pavan Farms
                   </WidgetName>
@@ -381,6 +394,7 @@ const Hero = () => {
             <Trending/>
           </WidgetRow>
       </Container>
+      
       <SidebarRight />
     </>
     

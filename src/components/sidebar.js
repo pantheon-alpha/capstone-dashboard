@@ -44,7 +44,7 @@ const Menu = styled.div`
     }
 
     .active {
-        margin: 0 2rem 0 2rem;
+        margin: .2rem 2rem;
         padding: 1rem 1.35rem;
         background-color: ${p=> p.theme.FNGreen};
         border-radius: 10px;

@@ -11,6 +11,7 @@
     "@mui/material": "^5.10.11",
     "@mui/styled-engine-sc": "^5.10.6",
     "chart.js": "^4.2.1",
+    "chartjs": "^0.3.24",
     "gatsby": "^4.24.4",
     "gatsby-firesource": "^2.0.3",
     "gatsby-plugin-google-fonts": "^1.0.1",
