@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Trend from './../../images/example.png'
-import { Link } from 'gatsby'
-
+import { useStaticQuery,graphql, Link } from 'gatsby'
 
 const Container = styled.div`
     background-color: ${p=> p.theme.primaryBg};
@@ -15,13 +14,6 @@ const Container = styled.div`
     margin-top: 0;
 
     //border: 2px solid red;
-`
-
-const StyledLink = styled(Link)`
-
-    text-decoration: none;
-    color: ${p=> p.theme.textPrimary};
-
 `
 
 const Table = styled.table`
@@ -83,23 +75,22 @@ const Table = styled.table`
         }
 
         background-color: ${p=> p.theme.secondaryBg};
+
+        &:hover{
+            background-color: #66D998;
+        }
+
         margin: 1rem 0;
         border-radius: 1rem;
 
-        &:hover{
-            text-decoration: none;
-            background-color: #66D998;
-
-        }
-
-        
-
         .name{
             width: 10rem;
+            text-align: left;
         }
 
         .number{
             width: 5rem;
+            text-align: center;
         }
 
 
@@ -114,7 +105,8 @@ const Table = styled.table`
         color: ${p=> p.theme.textPrimary};
         padding: 1rem;
         //border: 2px solid red;
-        align-items: left;
+        align-items: center;
+        text-align: center;
 
 
         #trend{
@@ -124,46 +116,71 @@ const Table = styled.table`
     }
 `
 
-function createData(id, farmName, trend, price, profit, loss) {
-    return { id,farmName, trend, price, profit, loss };
-  }
-
-const rows = [
-  createData(1,'Sridevi Farms', {Trend}, 2300, 200, 400),
-  createData(2,'Sridevi Farms', {Trend}, 2300, 200, 400),
-  createData(3,'Sridevi Farms', {Trend}, 2300, 200, 400),
-  createData(4,'Sridevi Farms', {Trend}, 2300, 200, 400),
-];
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`
 
 
-const Trending = () => {
+
+const FarmWatchlist = () => {
+
+    const data = useStaticQuery(query)
+    const rows = data.allFarm.edges.map((edge, index) => ({
+        id: edge.node.id,
+        index: index + 1,
+        name: edge.node.name,
+        city: edge.node.city,
+        price: edge.node.price,
+        size: edge.node.size,
+        trend: edge.node.trend,
+    }))
+    
+   
+
+
   return (
     <Container>
         <Table>
-            <tr id='header'>
-                <th className='number'></th>
-                <th className='name' align='left'id='farmName'>FARM</th>
-                <th className='number'></th>
-                <th className='number' align='center'>PRICE</th>
-                <th className='number' align='center'>LOREM</th>
-                <th className='number' align='center'>IPSUM</th>
-            </tr>
-            {rows.map((row) => (
-                <StyledLink to='/test'>
-                    <tr key={row.id}>
-                        <td align='left' className='number'>{row.id}</td>
-                        <td align='left' className='name'>{row.farmName}</td>
-                        <td align='left' className='number' id='trend'>{row.id}</td>
-                        <td align='center' className='number'>{row.price}</td>
-                        <td align='center' id="profit" className='number'>{row.profit}</td>
-                        <td align='center' id="loss" className='number'>{row.loss}</td>
-                    </tr>
-                </StyledLink>
-            ))}
-            
+            <thead>
+                <tr id="header">
+                    <th className="name">FARM</th>
+                    <th className="name">MARKET PRICE</th>
+                    <th className="number">LOW</th>
+                    <th className="number">HIGH</th>
+                </tr>
+            </thead>
+            <tbody>
+                {rows.map(row => (
+                    <StyledLink to='/test'>
+                        <tr key={row.id}>
+                            <td className="name">{row.name}</td>
+                            <td className="name">{row.price}</td>
+                            <td className="number">200</td>
+                            <td className="number">500</td>
+                        </tr>
+                    </StyledLink>
+                ))}
+            </tbody>
         </Table>
+        
     </Container>
   )
 }
 
-export default Trending
+export default FarmWatchlist
+
+export const query = graphql`
+    query {
+        allFarm {
+            edges {
+              node {
+                id
+                name
+                price
+                size
+                city
+              }
+            }
+          }
+    }
+`

@@ -122,43 +122,43 @@ const Sidebar = ({activeIndex}) => {
         },
         {
             id: 1,
+            title: 'Watchlist',
+            icon: sampleIcn,
+            link: '/watchlist'
+        },
+        {
+            id: 2,
             title: 'Farms',
             icon: sampleIcn,
             link: '/farms'
         },
         {
-            id: 2,
+            id: 3,
+            title: 'Funds',
+            icon: sampleIcn,
+            link: '/funds'
+        },
+        {
+            id: 4,
             title: 'Investments',
             icon: sampleIcn,
             link: '/investments'
         },
         {
-            id: 3,
-            title: 'Wallet',
-            icon: sampleIcn,
-            link: '/wallet'
-        },
-        {
-            id: 4,
-            title: 'Analysis',
-            icon: sampleIcn,
-            link: '/analysis'
-        },
-        {
             id: 5,
-            title: 'History',
+            title: 'Reports',
             icon: sampleIcn,
-            link: '/history'
+            link: '/reports'
         },
         {
             id: 6,
-            title: 'Products',
+            title: 'Profile',
             icon: sampleIcn,
-            link: '/products'
+            link: '/profile'
         },
         {
             id: 7,
-            title: 'Test',
+            title: 'Test', // tbc -> Help and Support
             icon: sampleIcn,
             link: '/test'
         },
