@@ -88,7 +88,7 @@ const Table = styled.table`
 
         &:hover{
             text-decoration: none;
-            background-color: gray;
+            background-color: #66D998;
 
         }
 

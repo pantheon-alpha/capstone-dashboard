@@ -52,7 +52,7 @@ const SearchIcn = styled(CiSearch)`
   color: ${p=> p.theme.textPrimary};
   opacity: .5;
 `
-const Analysis = () => (
+const Reports = () => (
   <Layout>
     <Container>
         <Header>
@@ -67,6 +67,6 @@ const Analysis = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Analysis" />
+export const Head = () => <Seo title="Reports" />
 
-export default Analysis
+export default Reports

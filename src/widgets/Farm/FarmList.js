@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Trend from './../../images/example.png'
 import { useStaticQuery,graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 const Container = styled.div`
     background-color: ${p=> p.theme.primaryBg};
@@ -75,6 +76,11 @@ const Table = styled.table`
         }
 
         background-color: ${p=> p.theme.secondaryBg};
+
+        &:hover{
+            background-color: #66D998;
+        }
+
         margin: 1rem 0;
         border-radius: 1rem;
 
@@ -111,6 +117,11 @@ const Table = styled.table`
     }
 `
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    cursor: pointer;
+`
+
 
 
 const FarmList = () => {
@@ -143,13 +154,16 @@ const FarmList = () => {
             </thead>
             <tbody>
                 {rows.map(row => (
-                    <tr key={row.id}>
-                        <td className='number'>{row.index}</td>
-                        <td className="name">{row.name}</td>
-                        <td className="name">{row.city}</td>
-                        <td className="number">{row.price}</td>
-                        <td className="number">{row.size}</td>
-                    </tr>
+                    <StyledLink to='/test'>
+                        <tr key={row.id}>
+                            <td className='number'>{row.index}</td>
+                            <td className="name">{row.name}</td>
+                            <td className="name">{row.city}</td>
+                            <td className="number">{row.price}</td>
+                            <td className="number">{row.size}</td>
+                        </tr>
+                    </StyledLink>
+                    
                 ))}
             </tbody>
         </Table>

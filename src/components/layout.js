@@ -23,27 +23,27 @@ const Layout = ({ children }) => {
     
     activeIndex = 0
   }
-  else if (location.pathname === "/farms") {
+  else if (location.pathname === "/watchlist") {
     activeIndex = 1
   }
-  else if (location.pathname === "/investments") {
+  else if (location.pathname === "/farms") {
     activeIndex = 2
   }
-  else if (location.pathname === "/wallet") {
+  else if (location.pathname === "/funds") {
     activeIndex = 3
   }
-  else if (location.pathname === "/analysis") {
+  else if (location.pathname === "/investments") {
     activeIndex = 4
   }
-  else if (location.pathname === "/history") {
+  else if (location.pathname === "/reports") {
     activeIndex = 5
   }
-  else if (location.pathname === "/products") {
+  else if (location.pathname === "/profile") {
     activeIndex = 6
   }
   else if (location.pathname === "/test") {
     activeIndex = 7
-  }
+  } // Help and Support later
   else if (location.pathname === "/settings") {
     activeIndex = 8
   }
