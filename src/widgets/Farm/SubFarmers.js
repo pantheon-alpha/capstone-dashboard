@@ -7,11 +7,11 @@ const Container = styled.div`
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 10px;
     background: ${p=> p.theme.bgSecondary};
     border-top: 0.5px solid rgba(191, 191, 191, 0.5);
+    width: 100%;
 
-    height: 45vh;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll; 
@@ -25,7 +25,7 @@ const Container = styled.div`
 const FarmList = styled.div`
     position: relative;
     
-    height: 50vh;
+    height: 40vh;
 `
 
 const Table = styled.table`
@@ -33,7 +33,7 @@ const Table = styled.table`
     border-collapse: collapse;
     border-spacing: 0;
     //border-top: 0.5px solid rgba(191, 191, 191, 0.5);
-    margin-top: 1rem;
+    margin-top: 0rem;
     z-index: 99;
     /* height: 50vh; */
     overflow-y: visible;
@@ -52,7 +52,7 @@ const Table = styled.table`
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0px 0px 20px 20px;
+        margin: 0rem 0rem 1rem 1rem;
 
         #details{
             display: flex;
@@ -65,7 +65,7 @@ const Table = styled.table`
 
 
             #username{
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 500;
             }
 
@@ -88,21 +88,31 @@ const Table = styled.table`
     }
 `
 const ProfileImg = styled.img`
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     margin-bottom: 0;
+`
+const Title = styled.h2`
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: ${p=> p.theme.textPrimary};
+    padding-left: 20px;
+    padding-bottom: 20px;
+
 `
 //left padding: 20px;
 
 const SubFarmers = () => {
 
   return (
-    <Container className='con'> 
+    <Container > 
 
         <FarmList>
             <Table>
                 <tbody>
+                    <Title>In this community</Title>
                     <tr>
                         <td><ProfileImg src={avatar}/></td>
                         <td id='details'>
@@ -113,29 +123,29 @@ const SubFarmers = () => {
                     <tr>
                         <td><ProfileImg src={avatar}/></td>
                         <td id='details'>
-                            <td id='username'>Acharya Raje</td>
-                            <td id='mail'>acharya.raje@gmail.com</td>
+                            <td id='username'>Soumya Agrawal</td>
+                            <td id='mail'>soumya.agrawal@gmail.com</td>
                         </td>
                     </tr>
                     <tr>
                         <td><ProfileImg src={avatar}/></td>
                         <td id='details'>
-                            <td id='username'>Acharya Raje</td>
-                            <td id='mail'>acharya.raje@gmail.com</td>
+                            <td id='username'>Sanket Mittal</td>
+                            <td id='mail'>sanket.mittal@gmail.com</td>
                         </td>
                     </tr>
                     <tr>
                         <td><ProfileImg src={avatar}/></td>
                         <td id='details'>
-                            <td id='username'>Acharya Raje</td>
-                            <td id='mail'>acharya.raje@gmail.com</td>
+                            <td id='username'>Sakshi Agrawal</td>
+                            <td id='mail'>sakshi.agrawal@gmail.com</td>
                         </td>
                     </tr>
                     <tr>
                         <td><ProfileImg src={avatar}/></td>
                         <td id='details'>
-                            <td id='username'>Acharya Raje</td>
-                            <td id='mail'>acharya.raje@gmail.com</td>
+                            <td id='username'>Aditya Vikram Sreejith</td>
+                            <td id='mail'>adi.vikky@gmail.com</td>
                         </td>
                     </tr>
                     <tr>

@@ -79,7 +79,9 @@ function Linechart() {
         },
         grid: {
           display: true,
-          borderDash: [10], //not working
+        },
+        border: {
+          dash: [10],
         }
       }
     }

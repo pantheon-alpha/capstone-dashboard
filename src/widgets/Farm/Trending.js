@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Trend from './../../images/example.png'
+import { Link } from 'gatsby'
 
 
 const Container = styled.div`
@@ -14,6 +15,13 @@ const Container = styled.div`
     margin-top: 0;
 
     //border: 2px solid red;
+`
+
+const StyledLink = styled(Link)`
+
+    text-decoration: none;
+    color: ${p=> p.theme.textPrimary};
+
 `
 
 const Table = styled.table`
@@ -78,6 +86,14 @@ const Table = styled.table`
         margin: 1rem 0;
         border-radius: 1rem;
 
+        &:hover{
+            text-decoration: none;
+            background-color: gray;
+
+        }
+
+        
+
         .name{
             width: 10rem;
         }
@@ -133,14 +149,16 @@ const Trending = () => {
                 <th className='number' align='center'>IPSUM</th>
             </tr>
             {rows.map((row) => (
-                <tr key={row.id}>
-                    <td align='left' className='number'>{row.id}</td>
-                    <td align='left' className='name'>{row.farmName}</td>
-                    <td align='left' className='number' id='trend'>{row.id}</td>
-                    <td align='center' className='number'>{row.price}</td>
-                    <td align='center' id="profit" className='number'>{row.profit}</td>
-                    <td align='center' id="loss" className='number'>{row.loss}</td>
-                </tr>
+                <StyledLink to='/test'>
+                    <tr key={row.id}>
+                        <td align='left' className='number'>{row.id}</td>
+                        <td align='left' className='name'>{row.farmName}</td>
+                        <td align='left' className='number' id='trend'>{row.id}</td>
+                        <td align='center' className='number'>{row.price}</td>
+                        <td align='center' id="profit" className='number'>{row.profit}</td>
+                        <td align='center' id="loss" className='number'>{row.loss}</td>
+                    </tr>
+                </StyledLink>
             ))}
             
         </Table>

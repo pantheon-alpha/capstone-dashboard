@@ -2,11 +2,11 @@ import * as React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { CiSearch } from "react-icons/ci"
 import { Link } from "gatsby"
 import Linechart from "../widgets/Charts/Linechart"
 import Buyselltab from "../widgets/Buyselltab"
 import Piechart from "../widgets/Charts/Piechart"
+import Sidebar from "../widgets/Farm/Sidebar"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
@@ -65,6 +65,7 @@ const CurPrice = styled.div`
   align-items: center;
   width: 100%;
   padding-top: 30px;
+  padding-bottom: 15px;
 
 `
 const SectionTitle = styled.h3`
@@ -118,6 +119,7 @@ const Test = () => (
               <Notifications></Notifications>
             </Buttons>
         </Header>
+
         <Wrapper>
           <Heading>
             <SectionTitle>Primary</SectionTitle>
@@ -161,9 +163,9 @@ const Test = () => (
           <Main>
             <Piechart />
           </Main>
-
         </Wrapper>
       </Container>
+      <Sidebar />
   </Layout>
 )
 

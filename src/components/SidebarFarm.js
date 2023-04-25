@@ -20,7 +20,7 @@ const Container = styled.div`
     margin-left: 80vw;
     padding: 0rem;
 
-    //border: solid 2px red;
+    border: solid 5px red;
 `
 const Header = styled.div`
     

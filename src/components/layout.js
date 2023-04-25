@@ -56,9 +56,7 @@ const Layout = ({ children }) => {
       <GlobalStyles/>
       <Layout>
         <Sidebar activeIndex={activeIndex}/>
-          {children}
-        {/* <SidebarRight/> */}
-        {/* <SidebarFarm/> */}
+        {children}
       </Layout>
     </ThemeProvider>
   )
