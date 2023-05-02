@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import {IoNotificationsCircleSharp} from 'react-icons/io5'
 import {RiMoonFill} from 'react-icons/ri'
 import {BsFillTriangleFill} from 'react-icons/bs'
-import Buyselltab from '../Buyselltab'
+
 import {IoExitOutline} from 'react-icons/io5'
 import {AiOutlinePlus} from 'react-icons/ai'
+import FAQ from '../FAQ'
 
 
 
@@ -60,66 +61,6 @@ const ThemeIcn = styled(RiMoonFill)`
     }
 
 `
-const Profile = styled.div`
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem 0rem;
-`
-const ProfileImg = styled.img`
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-`
-const ProfileName = styled.h3`
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${p=> p.theme.textHeading};
-`
-const ProfileEmail = styled.h3`
-    font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-    color: ${p=> p.theme.textPrimary};
-`
-const Balance = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem 0rem;
-`
-const BalanceTitle = styled.h3`
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: ${p=> p.theme.textPrimary};
-`
-const BalanceAmount = styled.h2`
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: ${p=> p.theme.textHeading};
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-const BalanceIcn = styled(BsFillTriangleFill)`
-    width: .5rem;
-    height: .5rem;
-    color: ${p=> p.theme.FNGreen};
-
-    margin-left: .5rem;
-`
 
 const SignOut = styled.div`
 
@@ -147,7 +88,7 @@ const SignOutText = styled.h3`
     color: ${p=> p.theme.textPrimary};
 `
 
-const Body = styled.div`
+const Wrapper = styled.div`
     flex: 5;
     display: flex;
     align-items: left;
@@ -159,61 +100,6 @@ const Body = styled.div`
     //background-color: ${p=> p.theme.secondaryBg};
 `
 
-const Title = styled.div`
-
-    display: flex;
-    align-items: top;
-    justify-content: top;
-
-    //background-color: aliceblue;
-    
-    h3 {
-        padding: 0 2rem;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;;
-
-    }
-
-    margin-bottom: 1rem;
-
-`
-
-const QuestionRow = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: row;
-    padding: 1rem 0rem;
-    //background-color: ${p=> p.theme.secondaryBg};
-
-    cursor: pointer;
-`
-
-const Question = styled.div`
-
-    p{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-    }
-    
-    
-`
-
-const Plus = styled(AiOutlinePlus)`
-    
-    width: 1rem;
-    height: 1rem;
-    color: ${p=> p.theme.FNGreen};
-    margin-right: 1rem;
-    cursor: pointer;
-`
-
-
-
 
 const Sidebar = () => {
     
@@ -224,66 +110,9 @@ const Sidebar = () => {
             <ThemeIcn />
         </Header>
 
-        <Body>
-            <Title>
-                <h3>FAQ</h3>
-            </Title>
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    What is KYC Forms?
-                    </p>
-                </Question>
-            </QuestionRow>
-
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    How to file Tax forms?
-                    </p>
-                </Question>
-            </QuestionRow>
-
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    Can I download forms?
-                    </p>
-                </Question>
-            </QuestionRow>
-
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    What are Account reports?
-                    </p>
-                </Question>
-            </QuestionRow>
-
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    How to choose date?
-                    </p>
-                </Question>
-            </QuestionRow>
-            
-            <QuestionRow>
-                <Plus/>
-                <Question>
-                    <p>
-                    How to open Finseed Acc?
-                    </p>
-                </Question>
-            </QuestionRow>
-
-
-        </Body>
+        <Wrapper>
+            <FAQ />
+        </Wrapper>
         
         <SignOut>
             <SignOutiIcn/>

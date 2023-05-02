@@ -88,7 +88,7 @@ const Table = styled.table`
 
         &:hover{
             text-decoration: none;
-            background-color: #66D998;
+            background-color: rgba(102,217,152,0.25);
 
         }
 
@@ -130,7 +130,7 @@ function createData(id, farmName, trend, price, profit, loss) {
 
 const rows = [
   createData(1,'Sridevi Farms', {Trend}, 2300, 200, 400),
-  createData(2,'Sridevi Farms', {Trend}, 2300, 200, 400),
+  createData(2,'Pavan Farms', {Trend}, 2300, 200, 400),
   createData(3,'Sridevi Farms', {Trend}, 2300, 200, 400),
   createData(4,'Sridevi Farms', {Trend}, 2300, 200, 400),
 ];
