@@ -123,14 +123,16 @@ const Test = () => (
         <Wrapper>
           <Heading>
             <SectionTitle>Primary</SectionTitle>
-            <SectionLink to='/404'>see more</SectionLink>
+            <SectionLink to='/page-2'>see more</SectionLink>
           </Heading>
           <CurPrice>
             <Price>₹2300.06</Price>
             <Deviation>+580.20 (2.87%)</Deviation>
           </CurPrice>
           <Main>
-            <Linechart />
+            <Linechart
+              cropId = 'C010'  
+            />
             <Buyselltab />
           </Main>
           <Heading>
@@ -141,7 +143,9 @@ const Test = () => (
             <Deviation>+415.26 (4.94%)</Deviation>
           </CurPrice>
           <Main>
-            <Linechart />
+            <Linechart
+              cropId = 'C004'
+            />
           </Main>
           <Heading>
             <SectionTitle>Apples</SectionTitle>
@@ -151,7 +155,9 @@ const Test = () => (
             <Deviation>+415.26 (4.94%)</Deviation>
           </CurPrice>
           <Main>
-            <Linechart />
+            <Linechart 
+              cropId = 'C007'
+            />
           </Main>
           <Heading>
             <SectionTitle>Investment Distribution</SectionTitle>

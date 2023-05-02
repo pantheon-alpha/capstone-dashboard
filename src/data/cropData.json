@@ -1,0 +1,1178 @@
+[
+    {
+        "cid" : "C001",
+        "cropName" : "Coffee" ,
+        "type" : "Plantation Crop",
+        "producePerAcre" : "3000",
+        "investment" : "175000",
+        "harvestPeriod" : "9",
+        "harvestBegin" : "May",
+        "harvestEnd" : "October",
+        "prices" : 
+            [
+                {
+                    "year" : "2018",
+                    "data" : [
+                        {"Month" : "January", "Price" : "167"},
+                        {"Month" : "February", "Price" : "167"},
+                        {"Month" : "March", "Price" : "167"},
+                        {"Month" : "April", "Price" : "167"},
+                        {"Month" : "May", "Price" : "167"},
+                        {"Month" : "June", "Price" : "167"},
+                        {"Month" : "July", "Price" : "167"},
+                        {"Month" : "August", "Price" : "167"},
+                        {"Month" : "September", "Price" : "167"},
+                        {"Month" : "October", "Price" : "167"},
+                        {"Month" : "November", "Price" : "167"},
+                        {"Month" : "December", "Price" : "167"}
+                    ]
+                },
+                {
+                    "year" : "2019",
+                    "data" : [
+                        {"Month" : "January","Price" : "144"},
+                        {"Month" : "February","Price" : "164"},
+                        {"Month" : "March","Price" : "168"},
+                        {"Month" : "April","Price" : "143"},
+                        {"Month" : "May", "Price" : "148"},
+                        {"Month" : "June","Price" : "160"},
+                        {"Month" : "July","Price" : "152"},
+                        {"Month" : "August","Price" : "161"},
+                        {"Month" : "September","Price" : "171"},
+                        {"Month" : "October","Price" : "147"},
+                        {"Month" : "November","Price" : "166"},
+                        {"Month" : "December","Price" : "139"} 
+                    ]
+                },
+                {
+                    "year" : "2020",
+                    "data" : [
+                        {"Month" : "January","Price" : "165"},
+                        {"Month" : "February","Price" : "156"},
+                        {"Month" : "March","Price" : "150"},
+                        {"Month" : "April","Price" : "149"},
+                        {"Month" : "May","Price" : "164"},
+                        {"Month" : "June","Price" : "149"},
+                        {"Month" : "July","Price" : "171"},
+                        {"Month" : "August","Price" : "157"},
+                        {"Month" : "September","Price" : "160"},
+                        {"Month" : "October", "Price" : "142"},
+                        {"Month" : "November","Price" : "168"},
+                        {"Month" : "December","Price" : "148"}
+                    ]
+                },
+                {
+                    "year" : "2021",
+                    "data" : [
+                        {"Month" : "January","Price" : "146"},
+                        {"Month" : "February","Price" : "158"},
+                        {"Month" : "March","Price" : "152"},
+                        {"Month" : "April","Price" : "149"},
+                        {"Month" : "May","Price" : "157"},
+                        {"Month" : "June","Price" : "160"},
+                        {"Month" : "July", "Price" : "154"},
+                        {"Month" : "August","Price" : "162"},
+                        {"Month" : "September","Price" : "150"},
+                        {"Month" : "October","Price" : "149"},
+                        {"Month" : "November","Price" : "165"},
+                        {"Month" : "December","Price" : "159"}
+                    ]
+                },
+                {
+                    "year" : "2022",
+                    "data" : [
+                        {"Month" : "January","Price" : "168"},
+                        {"Month" : "February","Price" : "145"},
+                        {"Month" : "March","Price" : "147"},
+                        {"Month" : "April","Price" : "167"},
+                        {"Month" : "May","Price" : "152"},
+                        {"Month" : "June","Price" : "141"},
+                        {"Month" : "July","Price" : "168"},
+                        {"Month" : "August","Price" : "145"},
+                        {"Month" : "September","Price" : "156"},
+                        {"Month" : "October","Price" : "144"},
+                        {"Month" : "November","Price" : "155"},
+                        {"Month" : "December","Price" : "146"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C002",
+        "cropName" : "Coconut" ,
+        "type" : "Plantation Crop",
+        "producePerAcre" : "2000",
+        "investment" : "26500",
+        "harvestPeriod" : "12",
+        "harvestBegin" : "January",
+        "harvestEnd" : "December",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January","Price" : "38"},
+                        {"Month" : "February","Price" : "47"},
+                        {"Month" : "March","Price" : "36"},
+                        {"Month" : "April","Price" : "42"},
+                        {"Month" : "May","Price" : "26"},
+                        {"Month" : "June","Price" : "26"},
+                        {"Month" : "July","Price" : "37"},
+                        {"Month" : "August","Price" : "41"},
+                        {"Month" : "September","Price" : "26"},
+                        {"Month" : "October","Price" : "32"},
+                        {"Month" : "November","Price" : "27"},
+                        {"Month" : "December","Price" : "28"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January","Price" : "25"},
+                        {"Month" : "February","Price" : "42"},
+                        {"Month" : "March","Price" : "50"},
+                        {"Month" : "April","Price" : "39"},
+                        {"Month" : "May","Price" : "47"},
+                        {"Month" : "June","Price" : "35"},
+                        {"Month" : "July","Price" : "35"},
+                        {"Month" : "August","Price" : "49"},
+                        {"Month" : "September","Price" : "32"},
+                        {"Month" : "October","Price" : "33"},
+                        {"Month" : "November","Price" : "28"},
+                        {"Month" : "December","Price" : "28"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January", "Price" : "41"},
+                        {"Month" : "February","Price" : "43"},
+                        {"Month" : "March","Price" : "27"},
+                        {"Month" : "April","Price" : "28"},
+                        {"Month" : "May", "Price" : "48"},
+                        {"Month" : "June","Price" : "42"},
+                        {"Month" : "July","Price" : "34"},
+                        {"Month" : "August","Price" : "37"},
+                        {"Month" : "September","Price" : "39"},
+                        {"Month" : "October", "Price" : "47"},
+                        {"Month" : "November","Price" : "30"},
+                        {"Month" : "December","Price" : "42"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "48"},
+                        {"Month" : "February", "Price" : "43"},
+                        {"Month" : "March",    "Price" : "34"},
+                        {"Month" : "April",    "Price" : "49"},
+                        {"Month" : "May",      "Price" : "26"},
+                        {"Month" : "June",     "Price" : "36"},
+                        {"Month" : "July",     "Price" : "28"},
+                        {"Month" : "August",   "Price" : "26"},
+                        {"Month" : "September","Price" : "29"},
+                        {"Month" : "October",  "Price" : "30"},
+                        {"Month" : "November", "Price" : "43"},
+                        {"Month" : "December", "Price" : "25"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January", "Price" : "42"},
+                        {"Month" : "February","Price" : "27"},
+                        {"Month" : "March",   "Price" : "26"},
+                        {"Month" : "April",   "Price" : "49"},
+                        {"Month" : "May",     "Price" : "38"},
+                        {"Month" : "June",    "Price" : "29"},
+                        {"Month" : "July",    "Price" : "27"},
+                        {"Month" : "August",  "Price" : "28"},
+                        {"Month" : "September","Price" : "49"},
+                        {"Month" : "October", "Price" : "31"},
+                        {"Month" : "November","Price" : "31"},
+                        {"Month" : "December","Price" : "48"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C003",
+        "cropName" : "Mango" ,
+        "type" : "Fruits",
+        "producePerAcre" : "6500",
+        "investment" : "112000",
+        "harvestPeriod" : "5",
+        "harvestBegin" : "April",
+        "harvestEnd" : "May",
+        "prices" : 
+             [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January", "Price" : "98"},
+                        {"Month" : "February","Price" : "94"},
+                        {"Month" : "March",   "Price" : "57"},
+                        {"Month" : "April",   "Price" : "102"},
+                        {"Month" : "May",     "Price" : "21"},
+                        {"Month" : "June",    "Price" : "86"},
+                        {"Month" : "July",    "Price" : "58"},
+                        {"Month" : "August",  "Price" : "36"},
+                        {"Month" : "September","Price" : "21"},
+                        {"Month" : "October", "Price" : "79"},
+                        {"Month" : "November","Price" : "22"},
+                        {"Month" : "December","Price" : "88"}
+                    ]
+                 },
+                 {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "33"},
+                        {"Month" : "February", "Price" : "24"},
+                        {"Month" : "March",    "Price" : "110"},
+                        {"Month" : "April",    "Price" : "34"},
+                        {"Month" : "May",      "Price" : "107"},
+                        {"Month" : "June",     "Price" : "56"},
+                        {"Month" : "July",     "Price" : "43"},
+                        {"Month" : "August",   "Price" : "57"},
+                        {"Month" : "September","Price" : "79"},
+                        {"Month" : "October",  "Price" : "41"},
+                        {"Month" : "November", "Price" : "88"},
+                        {"Month" : "December", "Price" : "36"}
+                    ]
+                 },
+                 {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "36"},
+                        {"Month" : "February", "Price" : "25"},
+                        {"Month" : "March",    "Price" : "74"},
+                        {"Month" : "April",    "Price" : "75"},
+                        {"Month" : "May",      "Price" : "56"},
+                        {"Month" : "June",     "Price" : "102"},
+                        {"Month" : "July",     "Price" : "81"},
+                        {"Month" : "August",   "Price" : "97"},
+                        {"Month" : "September","Price" : "86"},
+                        {"Month" : "October",  "Price" : "81"},
+                        {"Month" : "November", "Price" : "51"},
+                        {"Month" : "December", "Price" : "50"}
+                    ]
+                 },
+                 {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "56"},
+                        {"Month" : "February", "Price" : "90"},
+                        {"Month" : "March",    "Price" : "29"},
+                        {"Month" : "April",    "Price" : "57"},
+                        {"Month" : "May",      "Price" : "21"},
+                        {"Month" : "June",     "Price" : "31"},
+                        {"Month" : "July",     "Price" : "88"},
+                        {"Month" : "August",   "Price" : "34"},
+                        {"Month" : "September","Price" : "89"},
+                        {"Month" : "October",  "Price" : "51"},
+                        {"Month" : "November", "Price" : "103"},
+                        {"Month" : "December", "Price" : "85"}
+                    ]
+                 },
+                 {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "50"},
+                        {"Month" : "February", "Price" : "35"},
+                        {"Month" : "March",    "Price" : "86"},
+                        {"Month" : "April",    "Price" : "109"},
+                        {"Month" : "May",      "Price" : "20"},
+                        {"Month" : "June",     "Price" : "63"},
+                        {"Month" : "July",     "Price" : "35"},
+                        {"Month" : "August",   "Price" : "36"},
+                        {"Month" : "September","Price" : "31"},
+                        {"Month" : "October",  "Price" : "52"},
+                        {"Month" : "November", "Price" : "91"},
+                        {"Month" : "December", "Price" : "30"}
+                    ]
+                 }
+             ]
+    },
+    {
+        "cid" : "C004",
+        "cropName" : "Sapota" ,
+        "type" : "Fruits",
+        "producePerAcre" : "10000",
+        "investment" : "101000",
+        "harvestPeriod" : "6",
+        "harvestBegin" : "May",
+        "harvestEnd" : "June",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "31"},
+                        {"Month" : "February", "Price" : "34"},
+                        {"Month" : "March",    "Price" : "39"},
+                        {"Month" : "April",    "Price" : "49"},
+                        {"Month" : "May",      "Price" : "38"},
+                        {"Month" : "June",     "Price" : "40"},
+                        {"Month" : "July",     "Price" : "40"},
+                        {"Month" : "August",   "Price" : "39"},
+                        {"Month" : "September","Price" : "45"},
+                        {"Month" : "October",  "Price" : "40"},
+                        {"Month" : "November", "Price" : "32"},
+                        {"Month" : "December", "Price" : "49"}
+                    ] 
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "50"},
+                        {"Month" : "February", "Price" : "34"},
+                        {"Month" : "March",    "Price" : "50"},
+                        {"Month" : "April",    "Price" : "37"},
+                        {"Month" : "May",      "Price" : "33"},
+                        {"Month" : "June",     "Price" : "45"},
+                        {"Month" : "July",     "Price" : "46"},
+                        {"Month" : "August",   "Price" : "46"},
+                        {"Month" : "September","Price" : "47"},
+                        {"Month" : "October",  "Price" : "44"},
+                        {"Month" : "November", "Price" : "42"},
+                        {"Month" : "December", "Price" : "39"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "32"},
+                        {"Month" : "February", "Price" : "35"},
+                        {"Month" : "March",    "Price" : "35"},
+                        {"Month" : "April",    "Price" : "43"},
+                        {"Month" : "May",      "Price" : "31"},
+                        {"Month" : "June",     "Price" : "49"},
+                        {"Month" : "July",     "Price" : "35"},
+                        {"Month" : "August",   "Price" : "30"},
+                        {"Month" : "September","Price" : "33"},
+                        {"Month" : "October",  "Price" : "42"},
+                        {"Month" : "November", "Price" : "47"},
+                        {"Month" : "December", "Price" : "39"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "31"},
+                        {"Month" : "February", "Price" : "37"},
+                        {"Month" : "March",    "Price" : "46"},
+                        {"Month" : "April",    "Price" : "46"},
+                        {"Month" : "May",      "Price" : "45"},
+                        {"Month" : "June",     "Price" : "48"},
+                        {"Month" : "July",     "Price" : "42"},
+                        {"Month" : "August",   "Price" : "44"},
+                        {"Month" : "September","Price" : "50"},
+                        {"Month" : "October",  "Price" : "40"},
+                        {"Month" : "November", "Price" : "50"},
+                        {"Month" : "December", "Price" : "32"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "32"},
+                        {"Month" : "February", "Price" : "45"},
+                        {"Month" : "March",    "Price" : "47"},
+                        {"Month" : "April",    "Price" : "49"},
+                        {"Month" : "May",      "Price" : "37"},
+                        {"Month" : "June",     "Price" : "38"},
+                        {"Month" : "July",     "Price" : "38"},
+                        {"Month" : "August",   "Price" : "39"},
+                        {"Month" : "September","Price" : "41"},
+                        {"Month" : "October",  "Price" : "41"},
+                        {"Month" : "November", "Price" : "31"},
+                        {"Month" : "December", "Price" : "40"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C005",
+        "cropName" : "Carrot" ,
+        "type" : "Vegetables",
+        "producePerAcre" : "8000",
+        "investment" : "50000",
+        "harvestPeriod" : "3",
+        "harvestBegin" : "July",
+        "harvestEnd" : "February",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "26"},
+                        {"Month" : "February", "Price" : "30"},
+                        {"Month" : "March",    "Price" : "26"},
+                        {"Month" : "April",    "Price" : "22"},
+                        {"Month" : "May",      "Price" : "21"},
+                        {"Month" : "June",     "Price" : "24"},
+                        {"Month" : "July",     "Price" : "20"},
+                        {"Month" : "August",   "Price" : "26"},
+                        {"Month" : "September","Price" : "23"},
+                        {"Month" : "October",  "Price" : "21"},
+                        {"Month" : "November", "Price" : "28"},
+                        {"Month" : "December", "Price" : "27"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "25"},
+                        {"Month" : "February", "Price" : "23"},
+                        {"Month" : "March",    "Price" : "27"},
+                        {"Month" : "April",    "Price" : "24"},
+                        {"Month" : "May",      "Price" : "29"},
+                        {"Month" : "June",     "Price" : "30"},
+                        {"Month" : "July",     "Price" : "22"},
+                        {"Month" : "August",   "Price" : "20"},
+                        {"Month" : "September","Price" : "30"},
+                        {"Month" : "October",  "Price" : "28"},
+                        {"Month" : "November", "Price" : "25"},
+                        {"Month" : "December", "Price" : "20"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "24"},
+                        {"Month" : "February", "Price" : "26"},
+                        {"Month" : "March",    "Price" : "20"},
+                        {"Month" : "April",    "Price" : "30"},
+                        {"Month" : "May",      "Price" : "23"},
+                        {"Month" : "June",     "Price" : "30"},
+                        {"Month" : "July",     "Price" : "30"},
+                        {"Month" : "August",   "Price" : "27"},
+                        {"Month" : "September","Price" : "30"},
+                        {"Month" : "October",  "Price" : "23"},
+                        {"Month" : "November", "Price" : "27"},
+                        {"Month" : "December", "Price" : "29"}   
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "27"},
+                        {"Month" : "February", "Price" : "28"},
+                        {"Month" : "March",    "Price" : "22"},
+                        {"Month" : "April",    "Price" : "30"},
+                        {"Month" : "May",      "Price" : "27"},
+                        {"Month" : "June",     "Price" : "24"},
+                        {"Month" : "July",     "Price" : "21"},
+                        {"Month" : "August",   "Price" : "20"},
+                        {"Month" : "September","Price" : "30"},
+                        {"Month" : "October",  "Price" : "24"},
+                        {"Month" : "November", "Price" : "29"},
+                        {"Month" : "December", "Price" : "27"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "26"},
+                        {"Month" : "February", "Price" : "28"},
+                        {"Month" : "March",    "Price" : "26"},
+                        {"Month" : "April",    "Price" : "22"},
+                        {"Month" : "May",      "Price" : "22"},
+                        {"Month" : "June",     "Price" : "27"},
+                        {"Month" : "July",     "Price" : "26"},
+                        {"Month" : "August",   "Price" : "26"},
+                        {"Month" : "September","Price" : "25"},
+                        {"Month" : "October",  "Price" : "25"},
+                        {"Month" : "November", "Price" : "27"},
+                        {"Month" : "December", "Price" : "21"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C006",
+        "cropName" : "Cucumber" ,
+        "type" : "Vegetables",
+        "producePerAcre" : "7000",
+        "investment" : "55000",
+        "harvestPeriod" : "2",
+        "harvestBegin" : "January",
+        "harvestEnd" : "February",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "28"},
+                        {"Month" : "February", "Price" : "37"},
+                        {"Month" : "March",    "Price" : "26"},
+                        {"Month" : "April",    "Price" : "32"},
+                        {"Month" : "May",      "Price" : "16"},
+                        {"Month" : "June",     "Price" : "16"},
+                        {"Month" : "July",     "Price" : "27"},
+                        {"Month" : "August",   "Price" : "31"},
+                        {"Month" : "September","Price" : "16"},
+                        {"Month" : "October",  "Price" : "22"},
+                        {"Month" : "November", "Price" : "17"},
+                        {"Month" : "December", "Price" : "18"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "15"},
+                        {"Month" : "February", "Price" : "32"},
+                        {"Month" : "March",    "Price" : "40"},
+                        {"Month" : "April",    "Price" : "29"},
+                        {"Month" : "May",      "Price" : "37"},
+                        {"Month" : "June",     "Price" : "25"},
+                        {"Month" : "July",     "Price" : "25"},
+                        {"Month" : "August",   "Price" : "39"},
+                        {"Month" : "September","Price" : "22"},
+                        {"Month" : "October",  "Price" : "23"},
+                        {"Month" : "November", "Price" : "18"},
+                        {"Month" : "December", "Price" : "18"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "31"},
+                        {"Month" : "February", "Price" : "33"},
+                        {"Month" : "March",    "Price" : "17"},
+                        {"Month" : "April",    "Price" : "18"},
+                        {"Month" : "May",      "Price" : "38"},
+                        {"Month" : "June",     "Price" : "32"},
+                        {"Month" : "July",     "Price" : "24"},
+                        {"Month" : "August",   "Price" : "27"},
+                        {"Month" : "September","Price" : "29"},
+                        {"Month" : "October",  "Price" : "37"},
+                        {"Month" : "November", "Price" : "20"},
+                        {"Month" : "December", "Price" : "32"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "38"},
+                        {"Month" : "February", "Price" : "33"},
+                        {"Month" : "March",    "Price" : "24"},
+                        {"Month" : "April",    "Price" : "39"},
+                        {"Month" : "May",      "Price" : "16"},
+                        {"Month" : "June",     "Price" : "26"},
+                        {"Month" : "July",     "Price" : "18"},
+                        {"Month" : "August",   "Price" : "16"},
+                        {"Month" : "September","Price" : "19"},
+                        {"Month" : "October",  "Price" : "20"},
+                        {"Month" : "November", "Price" : "33"},
+                        {"Month" : "December", "Price" : "15"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "32"},
+                        {"Month" : "February", "Price" : "17"},
+                        {"Month" : "March",    "Price" : "16"},
+                        {"Month" : "April",    "Price" : "39"},
+                        {"Month" : "May",      "Price" : "28"},
+                        {"Month" : "June",     "Price" : "19"},
+                        {"Month" : "July",     "Price" : "17"},
+                        {"Month" : "August",   "Price" : "18"},
+                        {"Month" : "September","Price" : "39"},
+                        {"Month" : "October",  "Price" : "21"},
+                        {"Month" : "November", "Price" : "21"},
+                        {"Month" : "December", "Price" : "38"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C007",
+        "cropName" : "Sunflower" ,
+        "type" : "Oilseeds",
+        "producePerAcre" : "900",
+        "investment" : "11000",
+        "harvestPeriod" : "4",
+        "harvestBegin" : "January",
+        "harvestEnd" : "June",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "40"},
+                        {"Month" : "February", "Price" : "43"},
+                        {"Month" : "March",    "Price" : "48"},
+                        {"Month" : "April",    "Price" : "44"},
+                        {"Month" : "May",      "Price" : "40"},
+                        {"Month" : "June",     "Price" : "42"},
+                        {"Month" : "July",     "Price" : "49"},
+                        {"Month" : "August",   "Price" : "41"},
+                        {"Month" : "September","Price" : "40"},
+                        {"Month" : "October",  "Price" : "42"},
+                        {"Month" : "November", "Price" : "41"},
+                        {"Month" : "December", "Price" : "44"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "45"},
+                        {"Month" : "February", "Price" : "50"},
+                        {"Month" : "March",    "Price" : "52"},
+                        {"Month" : "April",    "Price" : "39"},
+                        {"Month" : "May",      "Price" : "49"},
+                        {"Month" : "June",     "Price" : "47"},
+                        {"Month" : "July",     "Price" : "41"},
+                        {"Month" : "August",   "Price" : "41"},
+                        {"Month" : "September","Price" : "42"},
+                        {"Month" : "October",  "Price" : "39"},
+                        {"Month" : "November", "Price" : "44"},
+                        {"Month" : "December", "Price" : "48"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "41"},
+                        {"Month" : "February", "Price" : "51"},
+                        {"Month" : "March",    "Price" : "51"},
+                        {"Month" : "April",    "Price" : "52"},
+                        {"Month" : "May",      "Price" : "40"},
+                        {"Month" : "June",     "Price" : "44"},
+                        {"Month" : "July",     "Price" : "44"},
+                        {"Month" : "August",   "Price" : "39"},
+                        {"Month" : "September","Price" : "49"},
+                        {"Month" : "October",  "Price" : "51"},
+                        {"Month" : "November", "Price" : "42"},
+                        {"Month" : "December", "Price" : "48"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "40"},
+                        {"Month" : "February", "Price" : "39"},
+                        {"Month" : "March",    "Price" : "48"},
+                        {"Month" : "April",    "Price" : "41"},
+                        {"Month" : "May",      "Price" : "40"},
+                        {"Month" : "June",     "Price" : "50"},
+                        {"Month" : "July",     "Price" : "44"},
+                        {"Month" : "August",   "Price" : "46"},
+                        {"Month" : "September","Price" : "45"},
+                        {"Month" : "October",  "Price" : "42"},
+                        {"Month" : "November", "Price" : "45"},
+                        {"Month" : "December", "Price" : "41"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "48"},
+                        {"Month" : "February", "Price" : "47"},
+                        {"Month" : "March",    "Price" : "42"},
+                        {"Month" : "April",    "Price" : "51"},
+                        {"Month" : "May",      "Price" : "46"},
+                        {"Month" : "June",     "Price" : "47"},
+                        {"Month" : "July",     "Price" : "47"},
+                        {"Month" : "August",   "Price" : "48"},
+                        {"Month" : "September","Price" : "43"},
+                        {"Month" : "October",  "Price" : "43"},
+                        {"Month" : "November", "Price" : "47"},
+                        {"Month" : "December", "Price" : "42"}     
+                    ]
+                }
+            ] 
+    },
+    {
+        "cid" : "C008",
+        "cropName" : "Sesame" ,
+        "type" : "Oilseeds",
+        "producePerAcre" : "400",
+        "investment" : "13000",
+        "harvestPeriod" : "5",
+        "harvestBegin" : "June",
+        "harvestEnd" : "July",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "188"},
+                        {"Month" : "February", "Price" : "184"},
+                        {"Month" : "March",    "Price" : "147"},
+                        {"Month" : "April",    "Price" : "192"},
+                        {"Month" : "May",      "Price" : "111"},
+                        {"Month" : "June",     "Price" : "176"},
+                        {"Month" : "July",     "Price" : "148"},
+                        {"Month" : "August",   "Price" : "126"},
+                        {"Month" : "September","Price" : "111"},
+                        {"Month" : "October",  "Price" : "169"},
+                        {"Month" : "November", "Price" : "112"},
+                        {"Month" : "December", "Price" : "178"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "123"},
+                        {"Month" : "February", "Price" : "114"},
+                        {"Month" : "March",    "Price" : "200"},
+                        {"Month" : "April",    "Price" : "124"},
+                        {"Month" : "May",      "Price" : "197"},
+                        {"Month" : "June",     "Price" : "146"},
+                        {"Month" : "July",     "Price" : "133"},
+                        {"Month" : "August",   "Price" : "147"},
+                        {"Month" : "September","Price" : "169"},
+                        {"Month" : "October",  "Price" : "131"},
+                        {"Month" : "November", "Price" : "178"},
+                        {"Month" : "December", "Price" : "126"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "126"},
+                        {"Month" : "February", "Price" : "115"},
+                        {"Month" : "March",    "Price" : "164"},
+                        {"Month" : "April",    "Price" : "165"},
+                        {"Month" : "May",      "Price" : "146"},
+                        {"Month" : "June",     "Price" : "192"},
+                        {"Month" : "July",     "Price" : "171"},
+                        {"Month" : "August",   "Price" : "187"},
+                        {"Month" : "September","Price" : "176"},
+                        {"Month" : "October",  "Price" : "171"},
+                        {"Month" : "November", "Price" : "141"},
+                        {"Month" : "December", "Price" : "140"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "146"},
+                        {"Month" : "February", "Price" : "180"},
+                        {"Month" : "March",    "Price" : "119"},
+                        {"Month" : "April",    "Price" : "147"},
+                        {"Month" : "May",      "Price" : "111"},
+                        {"Month" : "June",     "Price" : "121"},
+                        {"Month" : "July",     "Price" : "178"},
+                        {"Month" : "August",   "Price" : "124"},
+                        {"Month" : "September","Price" : "179"},
+                        {"Month" : "October",  "Price" : "141"},
+                        {"Month" : "November", "Price" : "193"},
+                        {"Month" : "December", "Price" : "175"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "140"},
+                        {"Month" : "February", "Price" : "125"},
+                        {"Month" : "March",    "Price" : "176"},
+                        {"Month" : "April",    "Price" : "199"},
+                        {"Month" : "May",      "Price" : "110"},
+                        {"Month" : "June",     "Price" : "153"},
+                        {"Month" : "July",     "Price" : "125"},
+                        {"Month" : "August",   "Price" : "126"},
+                        {"Month" : "September","Price" : "121"},
+                        {"Month" : "October",  "Price" : "142"},
+                        {"Month" : "November", "Price" : "181"},
+                        {"Month" : "December", "Price" : "120"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C009",
+        "cropName" : "Rubber" ,
+        "type" : "Commercial",
+        "producePerAcre" : "1713",
+        "investment" : "42701",
+        "harvestPeriod" : "96",
+        "harvestBegin" : "December",
+        "harvestEnd" : "January",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "95"},
+                        {"Month" : "February", "Price" : "84"},
+                        {"Month" : "March",    "Price" : "90"},
+                        {"Month" : "April",    "Price" : "86"},
+                        {"Month" : "May",      "Price" : "90"},
+                        {"Month" : "June",     "Price" : "84"},
+                        {"Month" : "July",     "Price" : "98"},
+                        {"Month" : "August",   "Price" : "85"},
+                        {"Month" : "September","Price" : "95"},
+                        {"Month" : "October",  "Price" : "85"},
+                        {"Month" : "November", "Price" : "101"},
+                        {"Month" : "December", "Price" : "100"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "90"},
+                        {"Month" : "February", "Price" : "101"},
+                        {"Month" : "March",    "Price" : "93"},
+                        {"Month" : "April",    "Price" : "101"},
+                        {"Month" : "May",      "Price" : "99"},
+                        {"Month" : "June",     "Price" : "94"},
+                        {"Month" : "July",     "Price" : "92"},
+                        {"Month" : "August",   "Price" : "96"},
+                        {"Month" : "September","Price" : "100"},
+                        {"Month" : "October",  "Price" : "95"},
+                        {"Month" : "November", "Price" : "86"},
+                        {"Month" : "December", "Price" : "87"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "85"},
+                        {"Month" : "February", "Price" : "100"},
+                        {"Month" : "March",    "Price" : "91"},
+                        {"Month" : "April",    "Price" : "88"},
+                        {"Month" : "May",      "Price" : "100"},
+                        {"Month" : "June",     "Price" : "88"},
+                        {"Month" : "July",     "Price" : "106"},
+                        {"Month" : "August",   "Price" : "105"},
+                        {"Month" : "September","Price" : "89"},
+                        {"Month" : "October",  "Price" : "106"},
+                        {"Month" : "November", "Price" : "101"},
+                        {"Month" : "December", "Price" : "89"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "106"},
+                        {"Month" : "February", "Price" : "93"},
+                        {"Month" : "March",    "Price" : "84"},
+                        {"Month" : "April",    "Price" : "94"},
+                        {"Month" : "May",      "Price" : "88"},
+                        {"Month" : "June",     "Price" : "101"},
+                        {"Month" : "July",     "Price" : "104"},
+                        {"Month" : "August",   "Price" : "94"},
+                        {"Month" : "September","Price" : "89"},
+                        {"Month" : "October",  "Price" : "85"},
+                        {"Month" : "November", "Price" : "106"},
+                        {"Month" : "December", "Price" : "104"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "94"},
+                        {"Month" : "February", "Price" : "89"},
+                        {"Month" : "March",    "Price" : "85"},
+                        {"Month" : "April",    "Price" : "106"},
+                        {"Month" : "May",      "Price" : "104"},
+                        {"Month" : "June",     "Price" : "89"},
+                        {"Month" : "July",     "Price" : "91"},
+                        {"Month" : "August",   "Price" : "88"},
+                        {"Month" : "September","Price" : "105"},
+                        {"Month" : "October",  "Price" : "97"},
+                        {"Month" : "November", "Price" : "90"},
+                        {"Month" : "December", "Price" : "86"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C010",
+        "cropName" : "Maize" ,
+        "type" : "Food Crop",
+        "producePerAcre" : "3000",
+        "investment" : "15200",
+        "harvestPeriod" : "4",
+        "harvestBegin" : "December",
+        "harvestEnd" : "April",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "20"},
+                        {"Month" : "February", "Price" : "23"},
+                        {"Month" : "March",    "Price" : "22"},
+                        {"Month" : "April",    "Price" : "20"},
+                        {"Month" : "May",      "Price" : "24"},
+                        {"Month" : "June",     "Price" : "20"},
+                        {"Month" : "July",     "Price" : "23"},
+                        {"Month" : "August",   "Price" : "19"},
+                        {"Month" : "September","Price" : "22"},
+                        {"Month" : "October",  "Price" : "20"},
+                        {"Month" : "November", "Price" : "21"},
+                        {"Month" : "December", "Price" : "20"}    
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "21"},
+                        {"Month" : "February", "Price" : "20"},
+                        {"Month" : "March",    "Price" : "24"},
+                        {"Month" : "April",    "Price" : "23"},
+                        {"Month" : "May",      "Price" : "19"},
+                        {"Month" : "June",     "Price" : "19"},
+                        {"Month" : "July",     "Price" : "23"},
+                        {"Month" : "August",   "Price" : "23"},
+                        {"Month" : "September","Price" : "24"},
+                        {"Month" : "October",  "Price" : "21"},
+                        {"Month" : "November", "Price" : "22"},
+                        {"Month" : "December", "Price" : "22"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "21"},
+                        {"Month" : "February", "Price" : "21"},
+                        {"Month" : "March",    "Price" : "21"},
+                        {"Month" : "April",    "Price" : "20"},
+                        {"Month" : "May",      "Price" : "20"},
+                        {"Month" : "June",     "Price" : "20"},
+                        {"Month" : "July",     "Price" : "24"},
+                        {"Month" : "August",   "Price" : "19"},
+                        {"Month" : "September","Price" : "19"},
+                        {"Month" : "October",  "Price" : "19"},
+                        {"Month" : "November", "Price" : "24"},
+                        {"Month" : "December", "Price" : "22"} 
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "20"},
+                        {"Month" : "February", "Price" : "23"},
+                        {"Month" : "March",    "Price" : "20"},
+                        {"Month" : "April",    "Price" : "23"},
+                        {"Month" : "May",      "Price" : "20"},
+                        {"Month" : "June",     "Price" : "23"},
+                        {"Month" : "July",     "Price" : "22"},
+                        {"Month" : "August",   "Price" : "22"},
+                        {"Month" : "September","Price" : "22"},
+                        {"Month" : "October",  "Price" : "24"},
+                        {"Month" : "November", "Price" : "21"},
+                        {"Month" : "December", "Price" : "20"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "21"},
+                        {"Month" : "February", "Price" : "21"},
+                        {"Month" : "March",    "Price" : "24"},
+                        {"Month" : "April",    "Price" : "19"},
+                        {"Month" : "May",      "Price" : "24"},
+                        {"Month" : "June",     "Price" : "23"},
+                        {"Month" : "July",     "Price" : "20"},
+                        {"Month" : "August",   "Price" : "21"},
+                        {"Month" : "September","Price" : "21"},
+                        {"Month" : "October",  "Price" : "22"},
+                        {"Month" : "November", "Price" : "21"},
+                        {"Month" : "December", "Price" : "21"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C011",
+        "cropName" : "Sugarcane" ,
+        "type" : "Commercial",
+        "producePerAcre" : "50000",
+        "investment" : "73600",
+        "harvestPeriod" : "18",
+        "harvestBegin" : "December",
+        "harvestEnd" : "March",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "24"},
+                        {"Month" : "February", "Price" : "12"},
+                        {"Month" : "March",    "Price" : "23"},
+                        {"Month" : "April",    "Price" : "21"},
+                        {"Month" : "May",      "Price" : "19"},
+                        {"Month" : "June",     "Price" : "21"},
+                        {"Month" : "July",     "Price" : "12"},
+                        {"Month" : "August",   "Price" : "23"},
+                        {"Month" : "September","Price" : "20"},
+                        {"Month" : "October",  "Price" : "12"},
+                        {"Month" : "November", "Price" : "13"},
+                        {"Month" : "December", "Price" : "18"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "16"},
+                        {"Month" : "February", "Price" : "15"},
+                        {"Month" : "March",    "Price" : "19"},
+                        {"Month" : "April",    "Price" : "12"},
+                        {"Month" : "May",      "Price" : "11"},
+                        {"Month" : "June",     "Price" : "17"},
+                        {"Month" : "July",     "Price" : "18"},
+                        {"Month" : "August",   "Price" : "12"},
+                        {"Month" : "September","Price" : "22"},
+                        {"Month" : "October",  "Price" : "19"},
+                        {"Month" : "November", "Price" : "23"},
+                        {"Month" : "December", "Price" : "20"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "13"},
+                        {"Month" : "February", "Price" : "16"},
+                        {"Month" : "March",    "Price" : "13"},
+                        {"Month" : "April",    "Price" : "24"},
+                        {"Month" : "May",      "Price" : "18"},
+                        {"Month" : "June",     "Price" : "21"},
+                        {"Month" : "July",     "Price" : "25"},
+                        {"Month" : "August",   "Price" : "23"},
+                        {"Month" : "September","Price" : "23"},
+                        {"Month" : "October",  "Price" : "14"},
+                        {"Month" : "November", "Price" : "25"},
+                        {"Month" : "December", "Price" : "23"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "24"},
+                        {"Month" : "February", "Price" : "12"},
+                        {"Month" : "March",    "Price" : "12"},
+                        {"Month" : "April",    "Price" : "18"},
+                        {"Month" : "May",      "Price" : "20"},
+                        {"Month" : "June",     "Price" : "14"},
+                        {"Month" : "July",     "Price" : "17"},
+                        {"Month" : "August",   "Price" : "25"},
+                        {"Month" : "September","Price" : "25"},
+                        {"Month" : "October",  "Price" : "18"},
+                        {"Month" : "November", "Price" : "19"},
+                        {"Month" : "December", "Price" : "25"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "16"},
+                        {"Month" : "February", "Price" : "11"},
+                        {"Month" : "March",    "Price" : "19"},
+                        {"Month" : "April",    "Price" : "12"},
+                        {"Month" : "May",      "Price" : "12"},
+                        {"Month" : "June",     "Price" : "16"},
+                        {"Month" : "July",     "Price" : "22"},
+                        {"Month" : "August",   "Price" : "14"},
+                        {"Month" : "September","Price" : "13"},
+                        {"Month" : "October",  "Price" : "16"},
+                        {"Month" : "November", "Price" : "12"},
+                        {"Month" : "December", "Price" : "12"}
+                    ]
+                }
+            ]
+    },
+    {
+        "cid" : "C012",
+        "cropName" : "Rice" ,
+        "type" : "Food Crop",
+        "producePerAcre" : "2400",
+        "investment" : "98860",
+        "harvestPeriod" : "5",
+        "harvestBegin" : "September",
+        "harvestEnd" : "October",
+        "prices" : 
+            [
+                {
+                    "year" : 2018,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "52"},
+                        {"Month" : "February", "Price" : "40"},
+                        {"Month" : "March",    "Price" : "51"},
+                        {"Month" : "April",    "Price" : "49"},
+                        {"Month" : "May",      "Price" : "47"},
+                        {"Month" : "June",     "Price" : "49"},
+                        {"Month" : "July",     "Price" : "25"},
+                        {"Month" : "August",   "Price" : "36"},
+                        {"Month" : "September","Price" : "48"},
+                        {"Month" : "October",  "Price" : "25"},
+                        {"Month" : "November", "Price" : "56"},
+                        {"Month" : "December","Price" : "46"}
+                    ]
+                },
+                {
+                    "year" : 2019,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "29"},
+                        {"Month" : "February", "Price" : "58"},
+                        {"Month" : "March",    "Price" : "47"},
+                        {"Month" : "April",    "Price" : "55"},
+                        {"Month" : "May",      "Price" : "39"},
+                        {"Month" : "June",     "Price" : "60"},
+                        {"Month" : "July",     "Price" : "31"},
+                        {"Month" : "August",   "Price" : "25"},
+                        {"Month" : "September","Price" : "50"},
+                        {"Month" : "October",  "Price" : "32"},
+                        {"Month" : "November", "Price" : "66"},
+                        {"Month" : "December", "Price" : "48"}
+                    ]
+                },
+                {
+                    "year" : 2020,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "41"},
+                        {"Month" : "February", "Price" : "59"},
+                        {"Month" : "March",    "Price" : "41"},
+                        {"Month" : "April",    "Price" : "37"},
+                        {"Month" : "May",      "Price" : "61"},
+                        {"Month" : "June",     "Price" : "34"},
+                        {"Month" : "July",     "Price" : "38"},
+                        {"Month" : "August",   "Price" : "51"},
+                        {"Month" : "September","Price" : "51"},
+                        {"Month" : "October",  "Price" : "27"},
+                        {"Month" : "November", "Price" : "38"},
+                        {"Month" : "December", "Price" : "36"}
+                    ]
+                },
+                {
+                    "year" : 2021,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "52"},
+                        {"Month" : "February", "Price" : "40"},
+                        {"Month" : "March",    "Price" : "55"},
+                        {"Month" : "April",    "Price" : "31"},
+                        {"Month" : "May",      "Price" : "48"},
+                        {"Month" : "June",     "Price" : "42"},
+                        {"Month" : "July",     "Price" : "60"},
+                        {"Month" : "August",   "Price" : "53"},
+                        {"Month" : "September","Price" : "38"},
+                        {"Month" : "October",  "Price" : "46"},
+                        {"Month" : "November", "Price" : "47"},
+                        {"Month" : "December", "Price" : "53"}
+                    ]
+                },
+                {
+                    "year" : 2022,
+                    "data" : [
+                        {"Month" : "January",  "Price" : "44"},
+                        {"Month" : "February", "Price" : "54"},
+                        {"Month" : "March",    "Price" : "62"},
+                        {"Month" : "April",    "Price" : "25"},
+                        {"Month" : "May",      "Price" : "25"},
+                        {"Month" : "June",     "Price" : "59"},
+                        {"Month" : "July",     "Price" : "50"},
+                        {"Month" : "August",   "Price" : "42"},
+                        {"Month" : "September","Price" : "56"},
+                        {"Month" : "October",  "Price" : "29"},
+                        {"Month" : "November", "Price" : "55"},
+                        {"Month" : "December", "Price" : "55"}
+                    ]
+                }
+            ]
+    }
+]
