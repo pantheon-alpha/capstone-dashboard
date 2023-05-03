@@ -6,6 +6,16 @@ import { useState } from 'react'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
+import dashboard from '../images/Dashboard/Vector (9).svg'
+import watchlist from '../images/Dashboard/material-symbols_list-alt-rounded.svg'
+import farms from '../images/Dashboard/material-symbols_compost-rounded.svg'
+import funds from '../images/Dashboard/material-symbols_account-balance-wallet.svg'
+import investments from '../images/Dashboard/ic_baseline-work-history.svg'
+import reports from '../images/Dashboard/material-symbols_lab-profile-rounded.svg'
+import profile from '../images/Dashboard/fa-solid_user-circle.svg'
+import help from '../images/Dashboard/material-symbols_help-rounded.svg'
+import settings from '../images/Dashboard/material-symbols_settings-rounded.svg'
+
 
 const Container = styled.div`
     background-color: ${p=> p.theme.secondaryBg};
@@ -56,6 +66,7 @@ const Menu = styled.div`
         img {
             width: 20px;
             height: 20px;
+            //color: ${p=> p.theme.primaryBg};
         }
 
         h3 {
@@ -67,6 +78,9 @@ const Menu = styled.div`
             color: ${p=> p.theme.secondaryHeading};
         }
     }
+    img{
+        color: ${p=> p.theme.primaryBg};
+    }
 `
 const MenuItem = styled.div`
     margin: .2rem 2rem;
@@ -77,7 +91,7 @@ const MenuItem = styled.div`
     align-items: center;
     justify-content: left;
     cursor: pointer;
-    
+    color: ${p=>p.theme.textPrimary};
 
     &:hover{
         //border: .5px solid black;
@@ -91,6 +105,7 @@ const MenuItem = styled.div`
     img {
         width: 20px;
         height: 20px;
+        color: ${p=> p.theme.secondaryHeading};;
     }
 
     h3 {
@@ -117,55 +132,55 @@ const Sidebar = ({activeIndex}) => {
         {
             id: 0,
             title: 'Dashboard',
-            icon: sampleIcn,
+            icon: dashboard,
             link: '/'
         },
         {
             id: 1,
             title: 'Watchlist',
-            icon: sampleIcn,
+            icon: watchlist,
             link: '/watchlist'
         },
         {
             id: 2,
             title: 'Farms',
-            icon: sampleIcn,
+            icon: farms,
             link: '/farms'
         },
         {
             id: 3,
             title: 'Funds',
-            icon: sampleIcn,
+            icon: funds,
             link: '/funds'
         },
         {
             id: 4,
             title: 'Investments',
-            icon: sampleIcn,
+            icon: investments,
             link: '/investments'
         },
         {
             id: 5,
             title: 'Reports',
-            icon: sampleIcn,
+            icon: reports,
             link: '/reports'
         },
         {
             id: 6,
             title: 'Profile',
-            icon: sampleIcn,
+            icon: profile,
             link: '/profile'
         },
         {
             id: 7,
             title: 'Help & Support', // tbc -> Help and Support
-            icon: sampleIcn,
+            icon: help,
             link: '/h&s'
         },
         {
             id: 8,
             title: 'Settings',
-            icon: sampleIcn,
+            icon: settings,
             link: '/settings'
         },
     ]
