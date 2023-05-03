@@ -5,6 +5,8 @@ import Seo from "../components/seo"
 import { CiSearch } from "react-icons/ci"
 import {AiOutlineDownload} from "react-icons/ai"
 import Sidebar from "../widgets/Reports/Sidebar"
+import { Link } from "gatsby"
+import sampleFile from "../data/serfd.pdf"
 
 const Container = styled.section`
   background-color: ${p=> p.theme.primaryBg};
@@ -171,7 +173,7 @@ const DownloadIcn = styled(AiOutlineDownload)`
   width: 12px;
 `
 
-const DownloadBtn = styled.div`
+const DownloadBtn = styled(Link)`
 
     background: #66D998;
     border-radius: 50px;
@@ -185,6 +187,7 @@ const DownloadBtn = styled.div`
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
+    text-decoration: none;
 
     color: #FFFFFF;
 
@@ -226,7 +229,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn 
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -249,7 +256,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -274,7 +285,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -297,7 +312,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -328,7 +347,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -376,7 +399,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>
@@ -399,7 +426,11 @@ const Reports = () => (
                         <option>Jan 2022 - Feb 2023</option>
                       </select>
                     </DateDropdown>
-                    <DownloadBtn>
+                    <DownloadBtn
+                      href={sampleFile}
+                      download="Sample File"
+                      target = "_blank"
+                    >
                       <DownloadIcn/>
                       Download
                     </DownloadBtn>

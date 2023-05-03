@@ -156,7 +156,7 @@ const Test = () => (
           </CurPrice>
           <Main>
             <Linechart 
-              cropId = 'C007'
+              cropId = 'C001'
             />
           </Main>
           <Heading>

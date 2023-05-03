@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
   else if (location.pathname === "/profile") {
     activeIndex = 6
   }
-  else if (location.pathname === "/test") {
+  else if (location.pathname === "/h&s") {
     activeIndex = 7
   } // Help and Support later
   else if (location.pathname === "/settings") {
