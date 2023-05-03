@@ -105,7 +105,7 @@ function Linechart({cropId}) {
       pointBorderColor: 'black',
       pointBackgroundColor: 'white',
       pointBorderWidth: .5,
-      fill: true,
+      //fill: true,
       pointHoverBorderWidth: 2,
       pointHoverBorderColor: 'black',
       pointHoverBackgroundColor: 'white',
@@ -113,7 +113,7 @@ function Linechart({cropId}) {
       pointRadius: 2,
       tension: 0.2,
       pointStyle: 'circle',
-      borderWidth: 1,
+      borderWidth: 2,
     }]
   }
 
@@ -132,7 +132,9 @@ function Linechart({cropId}) {
         },
         ticks:{
           autoSkip: true,
-          maxTicksLimit: 12,
+          maxTicksLimit: 8,
+          max: 5,
+          min: 10,
         },
         border: {
           dash: [10],
@@ -156,6 +158,10 @@ function Linechart({cropId}) {
         },
         grid: {
           display: false,
+        },
+        ticks:{
+          autoSkip: true,
+          maxTicksLimit: 6,
         },
         border: {
           dash: [10],
