@@ -66,7 +66,7 @@ const Question = styled.div`
     h2{
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;   
+    font-size: 16px;   
     }
 `
 
@@ -80,34 +80,34 @@ const Plus = styled.span`
 `
 const data = [
     {
-        question: 'First question',
+        question: 'How to Invest?',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'As an investor once the account verification is all complete investing in a farm is as simple as selecting the farm and crop of desire. The quantity in shares or amount to be invested in the farm and making the payment.',
     },
     {
-        question: 'Second question',
+        question: 'How to get the accounts verified',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'All accounts are verified with the filing of Know Your Customer (KYC) forms with these details Finseed is able to verify the user to be allowed to invest'
     },
     {
-        question: 'Third question',
+        question: 'Trouble Registering?',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'Any trouble in registering helpline number is given below, please contact the administrator we will be at your help as soon as possible.',
     },
     {
-        question: 'Fourth question',
+        question: 'How to add multiple farms and crops?',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'A farmer can hold multiple farms and crops and add these separately with the help of the add button given in the farms section and filing the details.',
     },
     {
-        question: 'Fifth question',
+        question: 'How to track crop prices?',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'Farms section displays the prices of crop and farm value in a graph, showing the prices over the past months and years.',
     },
     {
-        question: 'Sixth question',
+        question: 'What are the risks of investing on finseed?',
         answer: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidun',
+            'Similar to any financial investment finseed consists of risks in agriculture which largely is failed crop especially during a unforeseen climatic calamity. Finseed provides risk assessment by rating the farms better which have less chance of a crop failure.',
     },
 ]
 

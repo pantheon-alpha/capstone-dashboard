@@ -158,9 +158,9 @@ const Sidebar = ({activeIndex}) => {
         },
         {
             id: 7,
-            title: 'Test', // tbc -> Help and Support
+            title: 'Help & Support', // tbc -> Help and Support
             icon: sampleIcn,
-            link: '/test'
+            link: '/h&s'
         },
         {
             id: 8,
